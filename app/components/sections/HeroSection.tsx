@@ -54,7 +54,7 @@ export function HeroSection({
     >
       {/* Mobile: soft centered glow */}
       <div className="sm:hidden pointer-events-none absolute inset-0 overflow-hidden mobile-hero-glow">
-        <div className="mobile-hero-glow absolute inset-0" style={{ background: "radial-gradient(ellipse 140% 50% at 50% 115%, rgba(249,115,22,0.5) 0%, rgba(194,65,12,0.25) 40%, transparent 65%)" }} />
+        <div className="mobile-hero-glow absolute inset-0" style={{ background: "radial-gradient(ellipse 200% 70% at 50% 115%, rgba(249,115,22,0.65) 0%, rgba(194,65,12,0.35) 40%, transparent 65%)" }} />
       </div>
       {/* Desktop only: glow peaks up from behind dashboard image */}
       <AnimatedGradientBackground className="hidden sm:block" position="50% 75%" />

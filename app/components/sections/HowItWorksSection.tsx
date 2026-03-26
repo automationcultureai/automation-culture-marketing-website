@@ -87,7 +87,7 @@ export function HowItWorksSection() {
         </div>
 
         {/* Main service card */}
-        <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-8 md:p-12">
+        <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 sm:p-8 md:p-12">
 
           {/* Top — icon + title */}
           <div className="flex items-start gap-4 mb-8">

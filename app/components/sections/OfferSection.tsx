@@ -110,7 +110,7 @@ export function OfferSection() {
             {/* Price */}
             <div className="mb-5 sm:mb-8 text-center">
               <div className="flex flex-col items-center">
-                <span className="text-6xl sm:text-8xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">10%</span>
+                <span className="text-7xl sm:text-8xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">10%</span>
                 <span className="text-sm text-zinc-400 mt-2">success fee per completed job. $20 minimum.</span>
               </div>
               <p className="mt-3 text-sm text-zinc-500">Industry standard: $2,000 setup fee + $800/month retainer. We charge neither.</p>
