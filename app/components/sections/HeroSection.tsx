@@ -52,6 +52,10 @@ export function HeroSection({
         "overflow-hidden pb-0 sm:pb-0 md:pb-0"
       )}
     >
+      {/* Mobile: soft centered glow */}
+      <div className="sm:hidden pointer-events-none absolute inset-0 overflow-hidden mobile-hero-glow">
+        <div className="mobile-hero-glow absolute inset-0" style={{ background: "radial-gradient(ellipse 90% 50% at 50% 40%, rgba(249,115,22,0.18) 0%, rgba(194,65,12,0.08) 50%, transparent 75%)" }} />
+      </div>
       {/* Desktop only: glow peaks up from behind dashboard image */}
       <AnimatedGradientBackground className="hidden sm:block" position="50% 75%" />
 
@@ -79,9 +83,9 @@ export function HeroSection({
           </p>
 
           {/* Actions */}
-          <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-400">
+          <div className="relative z-10 flex animate-appear justify-center gap-3 opacity-0 delay-400">
             {actions.map((action, index) => (
-              <Button key={index} variant={action.variant ?? "default"} size="lg" asChild>
+              <Button key={index} variant={action.variant ?? "default"} size="sm" className="sm:px-6 sm:py-3 sm:text-base" asChild>
                 <a href={action.href} className="flex items-center gap-2">
                   {action.icon}
                   {action.text}

@@ -200,9 +200,9 @@ html {
   section {
     background: #000 !important;
   }
-  /* Hide inline-style radial gradient overlay divs inside sections */
-  section .absolute[style*="radial-gradient"],
-  section .absolute[style*="background"] {
+  /* Hide inline-style radial gradient overlay divs inside sections (except the hero mobile glow) */
+  section .absolute[style*="radial-gradient"]:not(.mobile-hero-glow),
+  section .absolute[style*="background"]:not(.mobile-hero-glow) {
     display: none !important;
   }
 }
