@@ -83,9 +83,9 @@ export function HeroSection({
           </p>
 
           {/* Actions */}
-          <div className="relative z-10 flex animate-appear w-full sm:w-auto sm:justify-center gap-1 sm:gap-4 opacity-0 delay-400">
+          <div className="relative z-10 flex animate-appear justify-center gap-2 sm:gap-4 opacity-0 delay-400">
             {actions.map((action, index) => (
-              <Button key={index} variant={action.variant ?? "default"} size="lg" className="flex-1 sm:flex-none justify-center text-sm px-4 py-2.5 sm:text-base sm:px-6 sm:py-3" asChild>
+              <Button key={index} variant={action.variant ?? "default"} size="lg" className="text-sm px-4 py-2.5 sm:text-base sm:px-6 sm:py-3" asChild>
                 <a href={action.href} className="flex items-center justify-center gap-2">
                   {action.icon}
                   {action.text}
