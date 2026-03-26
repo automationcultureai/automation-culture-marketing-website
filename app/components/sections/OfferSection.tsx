@@ -152,7 +152,7 @@ export function OfferSection() {
         </div>
 
         {/* Footer note */}
-        <p className="mt-12 text-center text-sm text-zinc-600">
+        <p className="mt-6 sm:mt-12 text-center text-sm text-zinc-600">
           {"This early access offer is strictly limited to 5 clients. Once those spots are filled, pricing moves to a setup fee plus monthly retainer. This offer will not come back."}
         </p>
 

@@ -62,7 +62,7 @@ export function ContactSection() {
       </div>
 
       <div className="relative mx-auto max-w-container">
-        <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-24">
 
           {/* Left — copy */}
           <div className="flex flex-col justify-center gap-6">
