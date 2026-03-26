@@ -91,9 +91,9 @@ export function ProblemSection() {
                   ease: "easeOut",
                 }}
                 whileHover={{ y: -4, transition: { type: "spring", stiffness: 600, damping: 35 } }}
-                className="group relative overflow-hidden cursor-default rounded-xl border border-zinc-800 bg-zinc-900/50 p-4 sm:p-6 transition-colors duration-200 hover:border-orange-500/30"
+                className="group relative overflow-hidden cursor-default rounded-xl border border-zinc-800 bg-zinc-900/50 px-4 pb-4 pt-3 sm:p-6 transition-colors duration-200 hover:border-orange-500/30"
               >
-                <Icon className="mb-5 h-7 w-7 text-orange-400/70" />
+                <Icon className="mb-3 h-7 w-7 text-orange-400/70" />
                 <h3 className="mb-3 text-base font-semibold leading-snug text-white">
                   {point.headline}
                 </h3>

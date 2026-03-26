@@ -73,7 +73,7 @@ export function HeroSection({
           )}
 
           {/* Title */}
-          <h1 className="relative z-10 inline-block animate-hero-title text-4xl font-semibold leading-tight text-white drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
+          <h1 className="relative z-10 inline-block animate-hero-title text-5xl font-semibold leading-tight text-white drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
             {title}
           </h1>
 
@@ -85,7 +85,7 @@ export function HeroSection({
           {/* Actions */}
           <div className="relative z-10 flex animate-appear justify-center gap-3 opacity-0 delay-400">
             {actions.map((action, index) => (
-              <Button key={index} variant={action.variant ?? "default"} size="sm" className="sm:px-6 sm:py-3 sm:text-base" asChild>
+              <Button key={index} variant={action.variant ?? "default"} size="md" className="sm:px-6 sm:py-3 sm:text-base" asChild>
                 <a href={action.href} className="flex items-center gap-2">
                   {action.icon}
                   {action.text}
