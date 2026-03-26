@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { ToastNotification } from "@/components/ui/ToastNotification";
+import { MobileStickyBar } from "@/components/ui/MobileStickyBar";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { SocialProofBar } from "@/components/sections/SocialProofBar";
 import { ProblemSection } from "@/components/sections/ProblemSection";
@@ -62,6 +63,7 @@ export default function Home() {
       <ContactSection />
       <Footer />
       <ToastNotification />
+      <MobileStickyBar />
     </main>
   );
 }

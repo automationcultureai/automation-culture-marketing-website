@@ -45,7 +45,7 @@ export function HowItWorksSection() {
   const Icon = service.icon;
 
   return (
-    <section id="how-it-works" className="relative bg-zinc-950 px-4 py-24 sm:py-32">
+    <section id="how-it-works" className="relative bg-zinc-950 px-4 py-14 sm:py-24 md:py-32">
 
       {/* Warm ambient glow — builds toward offer section */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -55,7 +55,7 @@ export function HowItWorksSection() {
       <div className="relative mx-auto max-w-container">
 
         {/* Header */}
-        <div className="mb-16 max-w-2xl">
+        <div className="mb-8 sm:mb-16 max-w-2xl">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -105,17 +105,31 @@ export function HowItWorksSection() {
             </div>
           </div>
 
-          {/* Description */}
-          <p className="text-zinc-400 leading-relaxed max-w-2xl mb-12 sm:text-lg">
+          {/* Description — hidden on mobile */}
+          <p className="hidden sm:block text-zinc-400 leading-relaxed max-w-2xl mb-12 sm:text-lg">
             {service.description}
           </p>
 
           {/* How it works */}
-          <div className="mb-12">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 mb-6">
+          <div className="mb-8 sm:mb-12">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 mb-4 sm:mb-6">
               How it works
             </p>
-            <div className="grid gap-4 sm:grid-cols-2">
+
+            {/* Mobile: simple numbered list */}
+            <ol className="sm:hidden flex flex-col gap-3">
+              {service.howItWorks.map((item, i) => (
+                <li key={item.step} className="flex items-start gap-3">
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange-500/20 text-xs font-bold text-orange-400">
+                    {i + 1}
+                  </span>
+                  <span className="text-sm font-medium text-white leading-snug">{item.heading}</span>
+                </li>
+              ))}
+            </ol>
+
+            {/* Desktop: full step cards */}
+            <div className="hidden sm:grid gap-4 sm:grid-cols-2">
               {service.howItWorks.map((item, i) => (
                 <motion.div
                   key={item.step}
@@ -147,11 +161,11 @@ export function HowItWorksSection() {
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-zinc-800 mb-12" />
+          {/* Divider + Outcomes — hidden on mobile */}
+          <div className="hidden sm:block border-t border-zinc-800 mb-12" />
 
-          {/* Outcomes + Pricing side by side */}
-          <div className="grid gap-10 md:grid-cols-2">
+          {/* Outcomes + Pricing side by side — hidden on mobile */}
+          <div className="hidden sm:grid gap-10 md:grid-cols-2">
 
             {/* Outcomes */}
             <div>

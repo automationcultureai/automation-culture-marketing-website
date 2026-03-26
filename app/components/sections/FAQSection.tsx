@@ -44,7 +44,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.5, delay: index * 0.06, ease: "easeOut" }}
-      className="border-b border-zinc-800 last:border-0 py-5"
+      className={`border-b border-zinc-800 last:border-0 py-5${index >= 4 ? " hidden sm:block" : ""}`}
     >
       <p className="text-sm font-medium text-white sm:text-base mb-2">{q}</p>
       <p className="text-sm leading-relaxed text-zinc-400">{a}</p>
@@ -54,7 +54,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export function FAQSection() {
   return (
-    <section id="faq" className="relative bg-black px-4 py-24 sm:py-32">
+    <section id="faq" className="relative bg-black px-4 py-14 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 
@@ -64,7 +64,7 @@ export function FAQSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="mb-12 text-sm font-medium uppercase tracking-[0.2em] text-orange-400"
+          className="mb-8 sm:mb-12 text-sm font-medium uppercase tracking-[0.2em] text-orange-400"
         >
           FAQ
         </motion.p>
@@ -75,7 +75,7 @@ export function FAQSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-          className="mb-12 max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl"
+          className="mb-8 sm:mb-12 max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl"
         >
           The questions we&apos;d ask{" "}
           <span className="text-zinc-500">if we were you.</span>

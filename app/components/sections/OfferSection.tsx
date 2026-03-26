@@ -14,7 +14,7 @@ const checklistItems = [
 
 export function OfferSection() {
   return (
-    <section id="offer" className="relative bg-gradient-to-b from-black via-[#2a1500] to-black px-4 py-24 sm:py-32">
+    <section id="offer" className="relative bg-gradient-to-b from-black via-[#2a1500] to-black px-4 py-14 sm:py-24 md:py-32">
       {/* Also serves as #pricing anchor */}
       <span id="pricing" className="absolute -top-20" />
 
@@ -26,7 +26,7 @@ export function OfferSection() {
       <div className="relative mx-auto max-w-container">
 
         {/* Header */}
-        <div className="mb-16 text-center">
+        <div className="mb-8 sm:mb-16 text-center">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -57,13 +57,13 @@ export function OfferSection() {
           </motion.p>
         </div>
 
-        {/* Offer bubble */}
+        {/* Offer bubble — hidden on mobile */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-          className="mx-auto max-w-2xl rounded-xl border border-zinc-800 bg-zinc-900/50 p-8 mb-12 flex flex-col gap-6"
+          className="hidden sm:flex mx-auto max-w-2xl rounded-xl border border-zinc-800 bg-zinc-900/50 p-8 mb-12 flex-col gap-6"
         >
           <p className="text-2xl font-semibold text-white leading-snug">
             {'"If we bring you back 10 old clients and you make '}

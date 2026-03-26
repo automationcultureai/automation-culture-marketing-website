@@ -26,7 +26,7 @@ const painPoints = [
 
 export function ProblemSection() {
   return (
-    <section id="problem" className="relative bg-black px-4 py-24 sm:py-32">
+    <section id="problem" className="relative bg-black px-4 py-14 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 
@@ -53,13 +53,13 @@ export function ProblemSection() {
           <span className="text-zinc-500">they&apos;ve forgotten about.</span>
         </motion.h2>
 
-        {/* Body */}
+        {/* Body — hidden on mobile to save space */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
-          className="mb-16 max-w-[600px] space-y-4 text-zinc-400 sm:text-lg"
+          className="hidden sm:block mb-16 max-w-[600px] space-y-4 text-zinc-400 sm:text-lg"
         >
           <p>
             You worked hard to nurture and win those clients. You did good work. Then life
@@ -75,8 +75,8 @@ export function ProblemSection() {
           </p>
         </motion.div>
 
-        {/* Pain point cards */}
-        <div className="grid gap-4 sm:grid-cols-3">
+        {/* Pain point cards — add top margin on mobile since body is hidden */}
+        <div className="grid gap-4 sm:grid-cols-3 mt-8 sm:mt-0">
           {painPoints.map((point, i) => {
             const Icon = point.icon;
             return (

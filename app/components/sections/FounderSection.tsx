@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function FounderSection() {
   return (
-    <section id="founder" className="relative bg-zinc-950 px-4 py-24 sm:py-32">
+    <section id="founder" className="relative bg-zinc-950 px-4 py-14 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 
@@ -15,12 +15,22 @@ export function FounderSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-12 text-sm font-medium uppercase tracking-[0.2em] text-orange-400"
+          className="mb-8 sm:mb-12 text-sm font-medium uppercase tracking-[0.2em] text-orange-400"
         >
           Who&apos;s Behind This
         </motion.p>
 
-        <div className="flex flex-col gap-16 md:flex-row md:gap-4">
+        {/* Mobile: compact founder bio */}
+        <div className="md:hidden">
+          <h2 className="text-3xl font-semibold text-white mb-3">Hi, I&apos;m Nick.</h2>
+          <p className="text-zinc-400 leading-relaxed">
+            I started Automation Culture to help Melbourne service businesses turn their forgotten contact lists into real revenue. We only win when you do.
+          </p>
+          <p className="mt-4 text-sm font-medium text-orange-400">— Nick, Founder, Automation Culture</p>
+        </div>
+
+        {/* Desktop: full founder layout */}
+        <div className="hidden md:flex flex-col gap-16 md:flex-row md:gap-4">
 
           {/* Copy block */}
           <motion.div

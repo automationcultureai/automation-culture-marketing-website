@@ -44,12 +44,12 @@ const industries = [
 
 export function WhoWeServeSection() {
   return (
-    <section id="who" className="relative bg-zinc-950 px-4 py-24 sm:py-32">
+    <section id="who" className="relative bg-zinc-950 px-4 py-14 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 
         {/* Header */}
-        <div className="mb-16 max-w-2xl">
+        <div className="mb-8 sm:mb-16 max-w-2xl">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -82,11 +82,26 @@ export function WhoWeServeSection() {
           </motion.p>
         </div>
 
-        {/* Industry cards */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
+        {/* Mobile: compact industry tag list */}
+        <div className="sm:hidden flex flex-wrap gap-2 mb-8">
+          {industries.map((industry) => {
+            const Icon = industry.icon;
+            return (
+              <div
+                key={industry.title}
+                className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-sm font-medium text-white"
+              >
+                <Icon className="h-4 w-4 text-orange-400/70 shrink-0" />
+                {industry.title}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Desktop: full industry cards grid */}
+        <div className="hidden sm:grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
           {industries.map((industry, i) => {
             const Icon = industry.icon;
-            // Row 0 tiles: delays 0, 0.1, 0.2 — Row 1 tiles: delays 0.2, 0.3, 0.4
             const delay = (i % 3) * 0.1 + Math.floor(i / 3) * 0.2;
             return (
               <motion.div

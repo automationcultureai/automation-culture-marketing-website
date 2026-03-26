@@ -93,8 +93,8 @@ export function HeroSection({
         </div>
       </div>
 
-      {/* Image — full width, outside container */}
-      <div className="relative z-10 mt-16 pb-8 animate-hero-mockup -mx-4 px-10 sm:px-28">
+      {/* Image — full width, outside container — hidden on mobile */}
+      <div className="hidden sm:block relative z-10 mt-16 pb-8 animate-hero-mockup -mx-4 px-10 sm:px-28">
         <Mockup type="responsive" className="shadow-[0_0_60px_rgba(161,161,170,0.4)]">
           <Image
             src={imageSrc ?? image.dark}

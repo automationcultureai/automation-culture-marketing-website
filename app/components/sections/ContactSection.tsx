@@ -54,7 +54,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative bg-gradient-to-b from-[#1a0f00] via-[#2a1500] to-black px-4 py-24 sm:py-32">
+    <section id="contact" className="relative bg-gradient-to-b from-[#1a0f00] via-[#2a1500] to-black px-4 py-14 sm:py-24 md:py-32">
 
       {/* Hero-style radial glow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
