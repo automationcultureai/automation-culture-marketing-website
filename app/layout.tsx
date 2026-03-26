@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AnimationController } from "@/components/AnimationController";
+import { MobileMotionConfig } from "@/components/MobileMotionConfig";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,7 +35,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <AnimationController />
-          {children}
+          <MobileMotionConfig>
+            {children}
+          </MobileMotionConfig>
         </ThemeProvider>
       </body>
     </html>
