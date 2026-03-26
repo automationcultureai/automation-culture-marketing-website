@@ -35,7 +35,7 @@ const allStats = [...stats, ...stats];
 export function SocialProofBar() {
   return (
     <section
-      className="relative bg-zinc-900/50 border-t border-b border-zinc-700 py-8 overflow-hidden"
+      className="hidden sm:block relative bg-zinc-900/50 border-t border-b border-zinc-700 py-8 overflow-hidden"
       data-count-trigger
     >
       <div className="flex w-max animate-ticker">
