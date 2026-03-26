@@ -49,12 +49,12 @@ export function HeroSection({
       className={cn(
         "relative bg-background text-foreground",
         "py-12 sm:py-24 md:py-32 px-4",
-        "overflow-hidden pb-0 sm:pb-0 md:pb-0"
+        "overflow-hidden pb-12 sm:pb-0 md:pb-0"
       )}
     >
       {/* Mobile: soft centered glow */}
       <div className="sm:hidden pointer-events-none absolute inset-0 overflow-hidden mobile-hero-glow">
-        <div className="mobile-hero-glow absolute inset-0" style={{ background: "radial-gradient(ellipse 90% 50% at 50% 40%, rgba(249,115,22,0.18) 0%, rgba(194,65,12,0.08) 50%, transparent 75%)" }} />
+        <div className="mobile-hero-glow absolute inset-0" style={{ background: "radial-gradient(ellipse 120% 60% at 50% 40%, rgba(249,115,22,0.35) 0%, rgba(194,65,12,0.15) 45%, transparent 70%)" }} />
       </div>
       {/* Desktop only: glow peaks up from behind dashboard image */}
       <AnimatedGradientBackground className="hidden sm:block" position="50% 75%" />
