@@ -89,7 +89,7 @@ export function Navbar() {
             <li>
               <Button variant="default" size="sm" className="w-full" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
-                  Book a Discovery Call
+                  Wake up my leads
                 </a>
               </Button>
             </li>
