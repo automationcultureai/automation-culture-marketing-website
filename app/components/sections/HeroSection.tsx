@@ -52,8 +52,10 @@ export function HeroSection({
         "overflow-hidden pb-0 sm:pb-0 md:pb-0"
       )}
     >
-      {/* Animated gradient background — preserved from existing landing page */}
-      <AnimatedGradientBackground />
+      {/* Mobile: glow centred behind text */}
+      <AnimatedGradientBackground className="sm:hidden" position="50% 35%" />
+      {/* Desktop: glow peaks up from behind dashboard image */}
+      <AnimatedGradientBackground className="hidden sm:block" position="50% 75%" />
 
       <div className="relative z-10 mx-auto flex max-w-container flex-col gap-12 pt-16 sm:gap-24">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
