@@ -120,7 +120,7 @@ export function ContactSection() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-5">
 
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="name" className="text-sm font-medium text-zinc-300">
@@ -234,7 +234,7 @@ export function ContactSection() {
                   type="submit"
                   variant="default"
                   size="lg"
-                  className="w-full bg-orange-500 hover:bg-orange-400 text-white transition-shadow sm:shadow-[0_0_40px_rgba(249,115,22,0.8),0_0_100px_rgba(249,115,22,0.5),0_0_160px_rgba(249,115,22,0.2)] sm:hover:shadow-[0_0_60px_rgba(249,115,22,1),0_0_120px_rgba(249,115,22,0.6),0_0_200px_rgba(249,115,22,0.3)] sm:animate-nav-glow"
+                  className="w-full bg-orange-500 hover:bg-orange-400 text-white transition-shadow text-sm py-2 sm:text-base sm:py-3 sm:shadow-[0_0_40px_rgba(249,115,22,0.8),0_0_100px_rgba(249,115,22,0.5),0_0_160px_rgba(249,115,22,0.2)] sm:hover:shadow-[0_0_60px_rgba(249,115,22,1),0_0_120px_rgba(249,115,22,0.6),0_0_200px_rgba(249,115,22,0.3)] sm:animate-nav-glow"
                   disabled={status === "loading"}
                 >
                   {status === "loading" ? (

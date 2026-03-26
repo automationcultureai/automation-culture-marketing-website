@@ -141,7 +141,7 @@ export function OfferSection() {
               {"Early access clients lock in this model permanently. New clients after this cohort will pay a setup fee and monthly retainer. You won't."}
             </p>
 
-            <Button size="lg" className="w-full animate-nav-glow" asChild>
+            <Button size="lg" className="w-full animate-nav-glow text-sm py-2 sm:text-base sm:py-3" asChild>
               <a href="#contact">{"Claim your spot"}</a>
             </Button>
 
