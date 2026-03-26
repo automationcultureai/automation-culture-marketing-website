@@ -200,6 +200,11 @@ html {
   section {
     background: #000 !important;
   }
+  /* Hide inline-style radial gradient overlay divs inside sections */
+  section .absolute[style*="radial-gradient"],
+  section .absolute[style*="background"] {
+    display: none !important;
+  }
 }
 
 /* ===== MOBILE: disable all CSS animations ===== */
