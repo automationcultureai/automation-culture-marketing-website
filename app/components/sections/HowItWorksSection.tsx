@@ -45,7 +45,7 @@ export function HowItWorksSection() {
   const Icon = service.icon;
 
   return (
-    <section id="how-it-works" className="relative bg-zinc-950 px-4 py-14 sm:py-24 md:py-32">
+    <section id="how-it-works" className="relative bg-zinc-950 px-4 py-12 sm:py-24 md:py-32">
 
       {/* Warm ambient glow — builds toward offer section */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -90,7 +90,7 @@ export function HowItWorksSection() {
         <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 sm:p-8 md:p-12">
 
           {/* Top — icon + title */}
-          <div className="flex items-start gap-4 mb-8">
+          <div className="flex items-start gap-4 mb-5 sm:mb-8">
             <div
               className="flex h-12 w-12 items-center justify-center rounded-lg shrink-0"
               style={{ backgroundColor: `${service.accent}18`, border: `1px solid ${service.accent}30` }}
@@ -111,7 +111,7 @@ export function HowItWorksSection() {
           </p>
 
           {/* How it works */}
-          <div className="mb-8 sm:mb-12">
+          <div className="mb-5 sm:mb-12">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 mb-4 sm:mb-6">
               How it works
             </p>

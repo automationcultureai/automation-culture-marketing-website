@@ -44,7 +44,7 @@ const industries = [
 
 export function WhoWeServeSection() {
   return (
-    <section id="who" className="relative bg-zinc-950 px-4 py-14 sm:py-24 md:py-32">
+    <section id="who" className="relative bg-zinc-950 px-4 py-12 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 

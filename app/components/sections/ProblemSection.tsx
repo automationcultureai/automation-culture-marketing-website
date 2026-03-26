@@ -26,7 +26,7 @@ const painPoints = [
 
 export function ProblemSection() {
   return (
-    <section id="problem" className="relative bg-black px-4 py-14 sm:py-24 md:py-32">
+    <section id="problem" className="relative bg-black px-4 py-12 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 

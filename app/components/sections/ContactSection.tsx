@@ -54,7 +54,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative bg-gradient-to-b from-[#1a0f00] via-[#2a1500] to-black px-4 py-14 sm:py-24 md:py-32">
+    <section id="contact" className="relative bg-gradient-to-b from-[#1a0f00] via-[#2a1500] to-black px-4 py-12 sm:py-24 md:py-32">
 
       {/* Hero-style radial glow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -107,7 +107,7 @@ export function ContactSection() {
           </div>
 
           {/* Right — form */}
-          <div className="rounded-xl border border-orange-500/40 bg-zinc-900/50 p-6 sm:p-8 backdrop-blur-sm">
+          <div className="rounded-xl border border-orange-500/40 bg-zinc-900/50 p-4 sm:p-8 backdrop-blur-sm">
             {status === "success" ? (
               <div className="flex h-full flex-col items-center justify-center gap-4 py-12 text-center">
                 <CheckCircle2 className="h-12 w-12 text-orange-400" />

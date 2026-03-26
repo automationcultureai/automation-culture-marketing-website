@@ -14,7 +14,7 @@ const checklistItems = [
 
 export function OfferSection() {
   return (
-    <section id="offer" className="relative bg-gradient-to-b from-black via-[#2a1500] to-black px-4 py-14 sm:py-24 md:py-32">
+    <section id="offer" className="relative bg-gradient-to-b from-black via-[#2a1500] to-black px-4 py-12 sm:py-24 md:py-32">
       {/* Also serves as #pricing anchor */}
       <span id="pricing" className="absolute -top-20" />
 

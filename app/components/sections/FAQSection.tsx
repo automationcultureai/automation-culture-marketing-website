@@ -73,7 +73,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
 
 export function FAQSection() {
   return (
-    <section id="faq" className="relative bg-black px-4 py-14 sm:py-24 md:py-32">
+    <section id="faq" className="relative bg-black px-4 py-12 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 
