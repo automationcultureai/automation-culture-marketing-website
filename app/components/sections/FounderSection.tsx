@@ -20,13 +20,21 @@ export function FounderSection() {
           Who&apos;s Behind This
         </motion.p>
 
-        {/* Mobile: compact founder bio */}
+        {/* Mobile: founder bio */}
         <div className="md:hidden">
-          <h2 className="text-3xl font-semibold text-white mb-3">Hi, I&apos;m Nick.</h2>
-          <p className="text-zinc-400 leading-relaxed">
-            I started Automation Culture to help Melbourne service businesses turn their forgotten contact lists into real revenue. We only win when you do.
-          </p>
-          <p className="mt-4 text-sm font-medium text-orange-400">— Nick, Founder, Automation Culture</p>
+          <h2 className="text-3xl font-semibold text-white mb-5">Hi, I&apos;m Nick.</h2>
+          <div className="space-y-4 text-zinc-400 leading-relaxed">
+            <p>
+              I started Automation Culture because I kept seeing the same thing — great local businesses with full contact lists and no systems to follow up. The leads are there. The trust is already built. That&apos;s money being left on the table.
+            </p>
+            <p>
+              With AI and automation, turning that dormant list into real revenue is easier than it&apos;s ever been. All it takes is the right message at the right time.
+            </p>
+            <p>
+              If you&apos;re a Melbourne service business with an old contact list — let&apos;s find out what&apos;s in there.
+            </p>
+          </div>
+          <p className="mt-6 text-sm font-medium text-orange-400">— Nick, Founder, Automation Culture</p>
         </div>
 
         {/* Desktop: full founder layout */}

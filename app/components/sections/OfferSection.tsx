@@ -91,7 +91,7 @@ export function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            className="relative rounded-xl border border-amber-400/50 bg-gradient-to-b from-amber-950/70 via-orange-950/50 to-zinc-900/70 p-8 md:p-12"
+            className="relative rounded-xl border border-amber-400/50 bg-gradient-to-b from-amber-950/70 via-orange-950/50 to-zinc-900/70 p-5 sm:p-8 md:p-12"
             style={{ boxShadow: "0 0 40px rgba(251,191,36,0.25), 0 0 100px rgba(217,119,6,0.18), 0 0 160px rgba(249,115,22,0.10), inset 0 1px 0 rgba(251,191,36,0.15)" }}
           >
 
@@ -103,23 +103,23 @@ export function OfferSection() {
             </div>
 
             {/* Spots */}
-            <p className="text-center text-sm font-medium text-orange-400 mb-6 mt-2">
+            <p className="text-center text-sm font-medium text-orange-400 mb-4 sm:mb-6 mt-1 sm:mt-2">
               5 early access spots available — limited time only
             </p>
 
             {/* Price */}
-            <div className="mb-8 text-center">
+            <div className="mb-5 sm:mb-8 text-center">
               <div className="flex flex-col items-center">
-                <span className="text-8xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">10%</span>
+                <span className="text-6xl sm:text-8xl font-bold bg-gradient-to-r from-amber-300 to-orange-400 bg-clip-text text-transparent">10%</span>
                 <span className="text-sm text-zinc-400 mt-2">success fee per completed job. $20 minimum.</span>
               </div>
               <p className="mt-3 text-sm text-zinc-500">Industry standard: $2,000 setup fee + $800/month retainer. We charge neither.</p>
             </div>
 
-            <div className="mb-8 border-t border-zinc-800" />
+            <div className="mb-4 sm:mb-8 border-t border-zinc-800" />
 
             {/* Checklist — sequential 80ms stagger, translateY 10px */}
-            <div className="mb-8 grid gap-3 sm:grid-cols-2">
+            <div className="mb-4 sm:mb-8 grid gap-2 sm:gap-3 sm:grid-cols-2">
               {checklistItems.map((item, i) => (
                 <motion.div
                   key={item}
@@ -135,9 +135,9 @@ export function OfferSection() {
               ))}
             </div>
 
-            <div className="mb-8 border-t border-zinc-800" />
+            <div className="mb-4 sm:mb-8 border-t border-zinc-800" />
 
-            <p className="mb-6 text-center text-sm text-zinc-400">
+            <p className="mb-4 sm:mb-6 text-center text-sm text-zinc-400">
               {"Early access clients lock in this model permanently. New clients after this cohort will pay a setup fee and monthly retainer. You won't."}
             </p>
 

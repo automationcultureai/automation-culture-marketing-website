@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 
 const faqs = [
@@ -38,17 +40,34 @@ const faqs = [
 ];
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 15 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 0.5, delay: index * 0.06, ease: "easeOut" }}
-      className={`border-b border-zinc-800 last:border-0 py-5${index >= 4 ? " hidden sm:block" : ""}`}
-    >
-      <p className="text-sm font-medium text-white sm:text-base mb-2">{q}</p>
-      <p className="text-sm leading-relaxed text-zinc-400">{a}</p>
-    </motion.div>
+    <div className="border-b border-zinc-800 last:border-0">
+      {/* Mobile: accordion toggle */}
+      <button
+        className="sm:hidden w-full flex items-center justify-between py-4 text-left gap-4"
+        onClick={() => setOpen(!open)}
+      >
+        <span className="text-sm font-medium text-white">{q}</span>
+        <ChevronDown className={`h-4 w-4 text-zinc-500 shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <p className="sm:hidden pb-4 text-sm leading-relaxed text-zinc-400">{a}</p>
+      )}
+
+      {/* Desktop: always visible */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.5, delay: index * 0.06, ease: "easeOut" }}
+        className="hidden sm:block py-5"
+      >
+        <p className="text-sm font-medium text-white sm:text-base mb-2">{q}</p>
+        <p className="text-sm leading-relaxed text-zinc-400">{a}</p>
+      </motion.div>
+    </div>
   );
 }
 

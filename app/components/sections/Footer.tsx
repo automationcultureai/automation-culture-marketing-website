@@ -5,7 +5,18 @@ export function Footer() {
     <footer className="relative border-t border-zinc-800 bg-black px-4 py-10 pb-24 md:pb-10">
       <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(234,88,12,0.03) 0%, transparent 40%)" }} />
       <div className="relative mx-auto max-w-container">
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+
+        {/* Mobile: simple centred logo + tagline */}
+        <div className="sm:hidden flex flex-col items-center gap-2 text-center">
+          <a href="#" className="flex items-center gap-1 font-semibold text-base">
+            <span className="text-white">Automation</span>
+            <span className="text-orange-400">Culture</span>
+          </a>
+          <p className="text-sm text-zinc-600">We automate the gruntwork. You take care of business.</p>
+        </div>
+
+        {/* Desktop: full footer with nav */}
+        <div className="hidden sm:flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
 
           {/* Logo */}
           <a href="#" className="flex items-center gap-1 font-semibold text-base">
