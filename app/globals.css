@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 25 95% 53%;
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 25 95% 48%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 25 95% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade bottom utility */
+.fade-bottom {
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Animations */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear-zoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-appear {
+  animation: appear 0.6s ease forwards;
+}
+
+.animate-appear-zoom {
+  animation: appear-zoom 0.8s ease forwards;
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 25s linear infinite;
+  will-change: transform;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-700 {
+  animation-delay: 700ms;
+}
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Max container width */
+.max-w-container {
+  max-width: 1200px;
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 40px rgba(249, 115, 22, 0.15), 0 0 80px rgba(249, 115, 22, 0.08);
+}
+
+.glow-blue-hover:hover {
+  box-shadow: 0 0 40px rgba(249, 115, 22, 0.25), 0 0 80px rgba(249, 115, 22, 0.12);
+}
+
+/* Card hover transitions */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.12);
+}
+
+/* ===== HERO ENTRANCE ANIMATIONS (page load, no scroll trigger) ===== */
+@keyframes hero-title {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-mockup {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-hero-title {
+  animation: hero-title 600ms ease-out forwards;
+}
+
+.animate-hero-mockup {
+  opacity: 0;
+  animation: hero-mockup 800ms ease-out 300ms forwards;
+}
+
+/* ===== ESTIMATE CARD CONTENT FADE ===== */
+@keyframes estimate-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-estimate-fade {
+  animation: estimate-fade 150ms ease-out forwards;
+}
+
+/* ===== IDLE GLOW PULSE (nav CTA + offer + contact buttons) ===== */
+@keyframes nav-glow {
+  0%, 100% { box-shadow: 0 0 0px rgba(249, 115, 22, 0); }
+  50%       { box-shadow: 0 0 12px rgba(249, 115, 22, 0.4); }
+}
+
+.animate-nav-glow {
+  animation: nav-glow 2.5s ease-in-out infinite;
+}
+
+/* ===== ADDITIONAL DELAY UTILITIES ===== */
+.delay-200 { animation-delay: 200ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* ===== MOBILE: halve translateY distances for CSS animations ===== */
+@media (max-width: 639px) {
+  @keyframes hero-title-sm {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes hero-mockup-sm {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes appear-sm {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-hero-title  { animation-name: hero-title-sm; }
+  .animate-hero-mockup { animation-name: hero-mockup-sm; }
+  .animate-appear      { animation-name: appear-sm; }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-title,
+  .animate-hero-mockup,
+  .animate-appear,
+  .animate-appear-zoom {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-nav-glow {
+    animation: none !important;
+  }
+}
+
+/* ===== TOAST NOTIFICATION ===== */
+.toast-notification {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 320px;
+  z-index: 9999;
+}
+
+@media (max-width: 639px) {
+  .toast-notification {
+    right: calc(50% - 150px);
+    width: 300px;
+  }
+}
+
+@keyframes toast-enter {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toast-exit {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(10px); }
+}
+
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1);   opacity: 1;   }
+  50%       { transform: scale(1.4); opacity: 0.4; }
+}
+
+.toast-entering {
+  animation: toast-enter 400ms ease-out forwards;
+}
+
+.toast-exiting {
+  animation: toast-exit 300ms ease-in forwards;
+}
+
+.dot-pulse {
+  animation: dot-pulse 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes toast-enter {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes toast-exit {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  .dot-pulse {
+    animation: none !important;
+  }
+}
