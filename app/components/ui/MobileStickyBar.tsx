@@ -2,15 +2,13 @@
 
 export function MobileStickyBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-      <div className="border-t border-zinc-800 bg-black/95 backdrop-blur-md px-6 py-3">
-        <a
-          href="#contact"
-          className="flex mx-auto max-w-xs items-center justify-center gap-2 rounded-lg bg-orange-500 px-4 py-3 text-sm font-semibold text-white transition-colors active:bg-orange-400"
-        >
-          Wake up my leads →
-        </a>
-      </div>
+    <div className="fixed bottom-6 left-0 right-0 z-50 flex justify-center md:hidden">
+      <a
+        href="#contact"
+        className="rounded-full bg-orange-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-900/40 transition-colors active:bg-orange-400"
+      >
+        Wake up my leads →
+      </a>
     </div>
   );
 }
