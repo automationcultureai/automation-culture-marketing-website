@@ -73,7 +73,7 @@ export function HeroSection({
           )}
 
           {/* Title */}
-          <h1 className="relative z-10 inline-block animate-hero-title text-5xl font-semibold leading-tight text-white drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
+          <h1 className="relative z-10 inline-block animate-hero-title text-4xl font-semibold leading-tight text-white drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
             {title}
           </h1>
 
