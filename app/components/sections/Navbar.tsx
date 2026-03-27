@@ -55,7 +55,13 @@ export function Navbar() {
         </ul>
 
         {/* CTA */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://app.automationculture.com.au"
+            className="text-sm text-zinc-400 hover:text-white transition-colors duration-200"
+          >
+            Login
+          </a>
           <Button variant="default" size="sm" className="animate-nav-glow" asChild>
             <a href="#contact">Wake up my leads</a>
           </Button>
@@ -86,6 +92,14 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href="https://app.automationculture.com.au"
+                className="text-zinc-400 hover:text-white transition-colors text-sm"
+              >
+                Login
+              </a>
+            </li>
             <li>
               <Button variant="default" size="sm" className="w-full" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
