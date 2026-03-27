@@ -72,8 +72,8 @@ export function HowItWorksSection() {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl"
           >
-            The leads you&apos;ve written off{" "}
-            <span className="text-zinc-500">are still worth money.</span>
+            We automate the gruntwork.{" "}
+            <span className="text-zinc-500">You take the bookings.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 15 }}
