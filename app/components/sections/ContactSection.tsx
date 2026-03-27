@@ -10,9 +10,9 @@ const FORMSPREE_ENDPOINT = "https://formspree.io/f/mvzwleja";
 // Revenue estimate shown below the dropdown when a list size is selected
 const REVENUE_ESTIMATES: Record<string, string> = {
   "Under 100": "Let's see what we find.",
-  "100–500":   "Now we're talking.",
+  "100–500":   "Tha's what I'm talking about.",
   "500–1000":  "This one's looking juicy.",
-  "1000+":     "Mate. We need to talk.",
+  "1000+":     "*Rubs hands together*",
 };
 
 export function ContactSection() {
@@ -196,7 +196,7 @@ export function ContactSection() {
                     onChange={handleChange}
                     className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-white focus:border-orange-500/60 focus:outline-none focus:ring-1 focus:ring-orange-500/40 transition-colors"
                   >
-                    <option value="" className="bg-zinc-900">Select your industry (optional)</option>
+                    <option value="" className="bg-zinc-900">Select your industry</option>
                     <option value="Tradies" className="bg-zinc-900">Tradies</option>
                     <option value="Cleaning Services" className="bg-zinc-900">Cleaning Services</option>
                     <option value="Beauty & Wellness" className="bg-zinc-900">Beauty &amp; Wellness</option>
