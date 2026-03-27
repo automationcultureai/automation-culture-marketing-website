@@ -22,6 +22,7 @@ export function ContactSection() {
     email: "",
     phone: "",
     business: "",
+    industry: "",
     message: "",
   });
 
@@ -44,7 +45,7 @@ export function ContactSection() {
 
       if (res.ok) {
         setStatus("success");
-        setFormData({ name: "", email: "", phone: "", business: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", business: "", industry: "", message: "" });
       } else {
         setStatus("error");
       }
@@ -182,6 +183,27 @@ export function ContactSection() {
                     placeholder="Johnson & Co."
                     className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-orange-500/60 focus:outline-none focus:ring-1 focus:ring-orange-500/40 transition-colors"
                   />
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label htmlFor="industry" className="text-sm font-medium text-zinc-300">
+                    Industry
+                  </label>
+                  <select
+                    id="industry"
+                    name="industry"
+                    value={formData.industry}
+                    onChange={handleChange}
+                    className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-4 py-2.5 text-sm text-white focus:border-orange-500/60 focus:outline-none focus:ring-1 focus:ring-orange-500/40 transition-colors"
+                  >
+                    <option value="" className="bg-zinc-900">Select your industry (optional)</option>
+                    <option value="Tradies" className="bg-zinc-900">Tradies</option>
+                    <option value="Cleaning Services" className="bg-zinc-900">Cleaning Services</option>
+                    <option value="Beauty & Wellness" className="bg-zinc-900">Beauty &amp; Wellness</option>
+                    <option value="Health Practitioners" className="bg-zinc-900">Health Practitioners</option>
+                    <option value="Home Services" className="bg-zinc-900">Home Services</option>
+                    <option value="Other" className="bg-zinc-900">Other</option>
+                  </select>
                 </div>
 
                 <div className="flex flex-col gap-1.5">
