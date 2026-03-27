@@ -12,6 +12,7 @@ const navLinks = [
   { label: "About", href: "#founder" },
   { label: "FAQ", href: "#faq" },
   { label: "Get Started", href: "#contact" },
+  { label: "Client Login", href: "https://app.automationculture.com.au", external: true },
 ];
 
 export function Navbar() {
@@ -46,6 +47,7 @@ export function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-sm text-zinc-400 hover:text-white transition-colors duration-200"
               >
                 {link.label}
@@ -55,13 +57,7 @@ export function Navbar() {
         </ul>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="https://app.automationculture.com.au"
-            className="text-sm text-zinc-400 hover:text-white transition-colors duration-200"
-          >
-            Login
-          </a>
+        <div className="hidden md:block">
           <Button variant="default" size="sm" className="animate-nav-glow" asChild>
             <a href="#contact">Wake up my leads</a>
           </Button>
@@ -85,6 +81,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
+                  {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="text-zinc-300 hover:text-white transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
@@ -92,14 +89,6 @@ export function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="https://app.automationculture.com.au"
-                className="text-zinc-400 hover:text-white transition-colors text-sm"
-              >
-                Login
-              </a>
-            </li>
             <li>
               <Button variant="default" size="sm" className="w-full" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
