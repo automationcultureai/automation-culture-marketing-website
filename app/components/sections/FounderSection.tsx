@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function FounderSection() {
   return (
-    <section id="founder" className="relative bg-zinc-950 px-4 py-12 sm:py-24 md:py-32">
+    <section id="founder" className="relative bg-zinc-950 px-4 py-14 sm:py-24 md:py-32">
 
       <div className="relative mx-auto max-w-container">
 
@@ -58,8 +58,8 @@ export function FounderSection() {
                 systems in place to follow up.
               </p>
               <p>
-                The leads are there. The trust is already built. That&apos;s money just
-                being left on the table. I rather put it in your pocket and mine.
+                The leads are there. The trust is already built. There&apos;s money being
+                left on the table that I&apos;d rather put it in your pocket and mine.
               </p>
               <p>
                 All that&apos;s needed is the right message, at the right time. With the help
