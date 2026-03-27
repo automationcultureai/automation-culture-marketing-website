@@ -7,7 +7,7 @@ import { MobileMotionConfig } from "@/components/MobileMotionConfig";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Automation Culture.AI — We automate the boring parts.",
+  title: "Automation Culture",
   description:
     "AI-powered workflow automation for small businesses. Stop doing repetitive work. Start doing the work that matters.",
   openGraph: {
