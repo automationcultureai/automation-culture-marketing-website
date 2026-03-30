@@ -26,12 +26,12 @@ export function ToastNotification() {
         moduleSetPhase?.(p);
       };
 
-      // 3s delay → 400ms entrance → 10s visible → 300ms exit
-      setTimeout(() => update('shown'), 3000);
-      setTimeout(() => update('exiting'), 13400);
+      // 8s delay → 400ms entrance → 10s visible → 300ms exit
+      setTimeout(() => update('shown'), 8000);
+      setTimeout(() => update('exiting'), 18400);
       setTimeout(() => {
         update('done');
-      }, 13700);
+      }, 18700);
     }
 
     return () => { moduleSetPhase = null; };
@@ -64,7 +64,7 @@ export function ToastNotification() {
           }}
         />
         <span style={{ color: '#ffffff', fontSize: 15, fontWeight: 500, lineHeight: 1.4 }}>
-          Sophie Chen
+          Sophie Arnold
         </span>
       </div>
       <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13, margin: 0, marginBottom: 4, lineHeight: 1.4 }}>
