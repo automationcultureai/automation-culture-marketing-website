@@ -115,14 +115,17 @@ export function HowItWorksSection() {
               How it works
             </p>
 
-            {/* Mobile: simple numbered list */}
-            <ol className="sm:hidden flex flex-col gap-3">
+            {/* Mobile: numbered list with body text */}
+            <ol className="sm:hidden flex flex-col gap-4">
               {service.howItWorks.map((item, i) => (
                 <li key={item.step} className="flex items-start gap-3">
                   <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#C4394A]/10 text-xs font-bold text-[#C4394A]">
                     {i + 1}
                   </span>
-                  <span className="text-sm font-medium text-[#1a1a1a] leading-snug">{item.heading}</span>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-sm font-semibold text-[#1a1a1a] leading-snug">{item.heading}</span>
+                    <span className="text-sm text-[#5C5A58] leading-relaxed">{item.body}</span>
+                  </div>
                 </li>
               ))}
             </ol>
