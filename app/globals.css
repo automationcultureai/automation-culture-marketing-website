@@ -278,8 +278,7 @@ html {
 
 @media (max-width: 639px) {
   .toast-notification {
-    right: calc(50% - 150px);
-    width: 300px;
+    display: none;
   }
 }
 
