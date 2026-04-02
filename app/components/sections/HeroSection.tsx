@@ -59,7 +59,7 @@ export function HeroSection({
 
       {/* Mobile: subtle glow rising from bottom */}
       <div className="sm:hidden pointer-events-none absolute inset-0">
-        <div style={{ background: "radial-gradient(ellipse 140% 50% at 50% 100%, rgba(196,57,74,0.18) 0%, rgba(196,57,74,0.07) 55%, transparent 80%)" }} className="absolute inset-0" />
+        <div style={{ background: "radial-gradient(ellipse 140% 50% at 50% 100%, rgba(212,148,26,0.18) 0%, rgba(212,148,26,0.07) 55%, transparent 80%)" }} className="absolute inset-0" />
       </div>
 
 
@@ -68,9 +68,9 @@ export function HeroSection({
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           {/* Badge */}
           {badge && (
-            <Badge variant="outline" className="animate-appear animate-badge-shimmer gap-2 bg-[#C4394A]/8 ring-[#C4394A]/25">
+            <Badge variant="outline" className="animate-appear animate-badge-shimmer gap-2 bg-[#D4941A]/8 ring-[#D4941A]/25">
               <span className="text-muted-foreground">{badge.text}</span>
-              <a href={badge.action.href} className="flex items-center gap-1 text-[#C4394A]">
+              <a href={badge.action.href} className="flex items-center gap-1 text-[#D4941A]">
                 {badge.action.text}
                 <ArrowRightIcon className="h-3 w-3" />
               </a>

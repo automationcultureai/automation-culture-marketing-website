@@ -52,7 +52,7 @@ export function SocialProofBar() {
               className="flex-none min-w-[280px] text-center px-10 border-r border-[#1a1a1a]/10 last:border-r-0"
             >
               <div className="font-bold text-[32px] leading-none mb-2">
-                <span className="text-[#C4394A]">
+                <span className="text-[#D4941A]">
                   {/* Dollar sign (or any prefix) — always visible */}
                   {stat.prefix}
 

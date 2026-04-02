@@ -30,7 +30,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-[#FAFAF8]/90 backdrop-blur-md border-b border-[#C4394A]/20"
+          ? "bg-[#FAFAF8]/90 backdrop-blur-md border-b border-[#D4941A]/20"
           : "bg-transparent"
       )}
     >
@@ -38,7 +38,7 @@ export function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-1 font-semibold text-lg tracking-tight">
           <span className="text-[#1a1a1a]">Automation</span>
-          <span className="text-[#C4394A]">Culture</span>
+          <span className="text-[#D4941A]">Culture</span>
         </a>
 
         {/* Desktop nav */}
@@ -58,7 +58,7 @@ export function Navbar() {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <Button variant="default" size="sm" className="animate-nav-glow bg-[#C4394A] hover:bg-[#AD2F3E]" asChild>
+          <Button variant="default" size="sm" className="bg-[#D4941A] hover:bg-[#B07A14]" asChild>
             <a href="#contact">Wake up my leads</a>
           </Button>
         </div>
@@ -90,7 +90,7 @@ export function Navbar() {
               </li>
             ))}
             <li>
-              <Button variant="default" size="sm" className="w-full bg-[#C4394A] hover:bg-[#AD2F3E]" asChild>
+              <Button variant="default" size="sm" className="w-full bg-[#D4941A] hover:bg-[#B07A14]" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
                   Wake up my leads
                 </a>

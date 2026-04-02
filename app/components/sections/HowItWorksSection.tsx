@@ -38,7 +38,7 @@ const service = {
     "You only pay for completed appointments, not for cancelled bookings.",
   ],
   pricing: "Free to start. You only pay 10% when a job is completed. If we bring you nothing, you pay nothing.",
-  accent: "#C4394A",
+  accent: "#D4941A",
 };
 
 export function HowItWorksSection() {
@@ -55,7 +55,7 @@ export function HowItWorksSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
+            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
           >
             What We Do
           </motion.p>
@@ -92,7 +92,7 @@ export function HowItWorksSection() {
           <div className="flex items-start gap-4 mb-5 sm:mb-8">
             <div
               className="flex h-12 w-12 items-center justify-center rounded-lg shrink-0"
-              style={{ backgroundColor: "rgba(196,57,74,0.10)", border: "1px solid rgba(196,57,74,0.20)" }}
+              style={{ backgroundColor: "rgba(212,148,26,0.10)", border: "1px solid rgba(212,148,26,0.20)" }}
             >
               <Icon className="h-6 w-6" style={{ color: service.accent }} />
             </div>
@@ -119,7 +119,7 @@ export function HowItWorksSection() {
             <ol className="sm:hidden flex flex-col gap-4">
               {service.howItWorks.map((item, i) => (
                 <li key={item.step} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#C4394A]/10 text-xs font-bold text-[#C4394A]">
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#D4941A]/10 text-xs font-bold text-[#D4941A]">
                     {i + 1}
                   </span>
                   <div className="flex flex-col gap-1">
@@ -148,7 +148,7 @@ export function HowItWorksSection() {
                   style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}
                 >
                   <div className="relative z-10">
-                    <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[#C4394A]">
+                    <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[#D4941A]">
                       Step {item.step}
                     </p>
                     <h4 className="mb-2 text-base font-semibold leading-snug text-[#1a1a1a]">
@@ -177,7 +177,7 @@ export function HowItWorksSection() {
               <ul className="flex flex-col gap-3">
                 {service.outcomes.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-[#5C5A58]">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C4394A]" />
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#D4941A]" />
                     {item}
                   </li>
                 ))}
@@ -191,7 +191,7 @@ export function HowItWorksSection() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
               className="rounded-xl p-6 flex flex-col justify-between gap-6"
-              style={{ backgroundColor: "rgba(196,57,74,0.06)", border: "1px solid rgba(196,57,74,0.15)" }}
+              style={{ backgroundColor: "rgba(212,148,26,0.06)", border: "1px solid rgba(212,148,26,0.15)" }}
             >
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.2em] mb-3" style={{ color: service.accent }}>

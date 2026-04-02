@@ -57,7 +57,7 @@ function FAQItem({ q, a, index, open, onToggle }: { q: string; a: string; index:
         onClick={onToggle}
       >
         <span className="text-sm font-medium text-[#1a1a1a] sm:text-base">{q}</span>
-        <ChevronDown className={`h-4 w-4 text-[#C4394A] shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={`h-4 w-4 text-[#D4941A] shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
       <div
         style={{
@@ -97,7 +97,7 @@ export function FAQSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="mb-8 sm:mb-12 text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
+          className="mb-8 sm:mb-12 text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
         >
           FAQ
         </motion.p>
@@ -118,7 +118,7 @@ export function FAQSection() {
         <div className="mx-auto max-w-3xl flex justify-end mb-2">
           <button
             onClick={toggleAll}
-            className="text-xs font-medium text-[#9A9790] hover:text-[#C4394A] transition-colors"
+            className="text-xs font-medium text-[#9A9790] hover:text-[#D4941A] transition-colors"
           >
             {allOpen ? "Collapse all" : "Expand all"}
           </button>
@@ -140,7 +140,7 @@ export function FAQSection() {
           className="mt-10 text-center text-sm text-[#9A9790]"
         >
           Still have a question?{" "}
-          <a href="#contact" className="text-[#C4394A] transition-colors hover:text-[#AD2F3E]">
+          <a href="#contact" className="text-[#D4941A] transition-colors hover:text-[#B07A14]">
             Drop us a message →
           </a>
         </motion.p>

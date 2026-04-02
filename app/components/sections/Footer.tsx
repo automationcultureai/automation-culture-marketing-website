@@ -9,7 +9,7 @@ export function Footer() {
         <div className="sm:hidden flex flex-col items-center gap-2 text-center">
           <a href="#" className="flex items-center gap-1 font-semibold text-base">
             <span className="text-[#1a1a1a]">Automation</span>
-            <span className="text-[#C4394A]">Culture</span>
+            <span className="text-[#D4941A]">Culture</span>
           </a>
           <p className="text-sm text-[#9A9790]">We automate the boring stuff. You do what you do best.</p>
         </div>
@@ -20,7 +20,7 @@ export function Footer() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-1 font-semibold text-base">
             <span className="text-[#1a1a1a]">Automation</span>
-            <span className="text-[#C4394A]">Culture</span>
+            <span className="text-[#D4941A]">Culture</span>
           </a>
 
           {/* Tagline */}

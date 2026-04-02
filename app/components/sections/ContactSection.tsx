@@ -67,7 +67,7 @@ export function ContactSection() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
+              className="text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
             >
               Get Started
             </motion.p>
@@ -99,11 +99,11 @@ export function ContactSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-              className="border-l-2 border-[#C4394A]/40 pl-5">
+              className="border-l-2 border-[#D4941A]/40 pl-5">
               <p className="text-[#5C5A58] leading-relaxed">
                 &ldquo;I work with a small number of clients at a time so every campaign gets proper attention. If you&apos;re a Melbourne beauty or wellness business with an old contact list, a 20-minute call is all it takes to find out what&apos;s hiding in there.&rdquo;
               </p>
-              <p className="mt-3 text-sm font-medium text-[#C4394A]">— Nick</p>
+              <p className="mt-3 text-sm font-medium text-[#D4941A]">— Nick</p>
             </motion.blockquote>
           </div>
 
@@ -113,10 +113,10 @@ export function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            className="noise rounded-2xl border border-[#C4394A]/30 bg-white p-4 sm:p-8 backdrop-blur-sm" style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}>
+            className="noise rounded-2xl border border-[#D4941A]/30 bg-white p-4 sm:p-8 backdrop-blur-sm" style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}>
             {status === "success" ? (
               <div className="flex h-full flex-col items-center justify-center gap-4 py-12 text-center">
-                <CheckCircle2 className="h-12 w-12 text-[#C4394A]" />
+                <CheckCircle2 className="h-12 w-12 text-[#D4941A]" />
                 <h3 className="text-xl font-semibold text-[#1a1a1a]">{"You're in."}</h3>
                 <p className="max-w-sm text-[#5C5A58]">
                   {"We've got your details. Expect a messsage within the hour."}
@@ -130,7 +130,7 @@ export function ContactSection() {
 
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="name" className="text-xs font-medium uppercase tracking-[0.1em] text-[#5C5A58]">
-                    Your name <span className="text-[#C4394A]">*</span>
+                    Your name <span className="text-[#D4941A]">*</span>
                   </label>
                   <input
                     id="name"
@@ -140,13 +140,13 @@ export function ContactSection() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Alex Johnson"
-                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#C4394A]/40 focus:outline-none focus:ring-1 focus:ring-[#C4394A]/15 transition-colors"
+                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#D4941A]/40 focus:outline-none focus:ring-1 focus:ring-[#D4941A]/15 transition-colors"
                   />
                 </div>
 
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="email" className="text-xs font-medium uppercase tracking-[0.1em] text-[#5C5A58]">
-                    Email address <span className="text-[#C4394A]">*</span>
+                    Email address <span className="text-[#D4941A]">*</span>
                   </label>
                   <input
                     id="email"
@@ -156,7 +156,7 @@ export function ContactSection() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="alex@yourbusiness.com"
-                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#C4394A]/40 focus:outline-none focus:ring-1 focus:ring-[#C4394A]/15 transition-colors"
+                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#D4941A]/40 focus:outline-none focus:ring-1 focus:ring-[#D4941A]/15 transition-colors"
                   />
                 </div>
 
@@ -171,7 +171,7 @@ export function ContactSection() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="04xx xxx xxx"
-                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#C4394A]/40 focus:outline-none focus:ring-1 focus:ring-[#C4394A]/15 transition-colors"
+                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#D4941A]/40 focus:outline-none focus:ring-1 focus:ring-[#D4941A]/15 transition-colors"
                   />
                 </div>
 
@@ -186,7 +186,7 @@ export function ContactSection() {
                     value={formData.business}
                     onChange={handleChange}
                     placeholder="Johnson & Co."
-                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#C4394A]/40 focus:outline-none focus:ring-1 focus:ring-[#C4394A]/15 transition-colors"
+                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] placeholder:text-[#9A9790] focus:border-[#D4941A]/40 focus:outline-none focus:ring-1 focus:ring-[#D4941A]/15 transition-colors"
                   />
                 </div>
 
@@ -199,7 +199,7 @@ export function ContactSection() {
                     name="industry"
                     value={formData.industry}
                     onChange={handleChange}
-                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] focus:border-[#C4394A]/40 focus:outline-none focus:ring-1 focus:ring-[#C4394A]/15 transition-colors"
+                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] focus:border-[#D4941A]/40 focus:outline-none focus:ring-1 focus:ring-[#D4941A]/15 transition-colors"
                   >
                     <option value="">Select your industry</option>
                     <option value="Beauty & Wellness">Beauty &amp; Wellness</option>
@@ -217,7 +217,7 @@ export function ContactSection() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] focus:border-[#C4394A]/40 focus:outline-none focus:ring-1 focus:ring-[#C4394A]/15 transition-colors"
+                    className="form-field rounded-xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 py-2.5 text-sm text-[#1a1a1a] focus:border-[#D4941A]/40 focus:outline-none focus:ring-1 focus:ring-[#D4941A]/15 transition-colors"
                   >
                     <option value="" disabled>Select a range</option>
                     <option value="Under 100">Under 100</option>
@@ -258,7 +258,7 @@ export function ContactSection() {
                   type="submit"
                   variant="default"
                   size="lg"
-                  className="w-full bg-[#C4394A] hover:bg-[#AD2F3E] text-white transition-shadow text-sm py-2 sm:text-base sm:py-3 sm:shadow-lg sm:animate-nav-glow"
+                  className="w-full bg-[#D4941A] hover:bg-[#B07A14] text-white transition-shadow text-sm py-2 sm:text-base sm:py-3 sm:shadow-lg sm:animate-nav-glow"
                   disabled={status === "loading"}
                 >
                   {status === "loading" ? (

@@ -35,7 +35,7 @@ export function ProblemSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
+          className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
         >
           The Reality
         </motion.p>
@@ -48,7 +48,7 @@ export function ProblemSection() {
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="mb-6 max-w-3xl text-4xl font-semibold leading-tight text-[#1a1a1a] sm:text-5xl md:text-6xl" style={{ letterSpacing: "-0.02em" }}
         >
-          Most businesses are sitting on <span className="bg-gradient-to-r from-[#f9a8b4] via-[#C4394A] to-[#A82D3D] bg-clip-text text-transparent">thousands</span> in revenue{" "}
+          Most businesses are sitting on <span className="bg-gradient-to-r from-[#ECC878] via-[#D4941A] to-[#B07A14] bg-clip-text text-transparent">thousands</span> in revenue{" "}
           <span className="text-[#5C5A58]">they&apos;ve forgotten about.</span>
         </motion.h2>
 
@@ -93,7 +93,7 @@ export function ProblemSection() {
                 className="noise relative overflow-hidden cursor-default rounded-2xl border border-[#ECEAE6] bg-[#F2F0EC] px-4 pb-4 pt-3 sm:p-6"
                 style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}
               >
-                <Icon className="mb-3 h-7 w-7 text-[#C4394A]" />
+                <Icon className="mb-3 h-7 w-7 text-[#D4941A]" />
                 <h3 className="mb-3 text-base font-semibold leading-snug text-[#1a1a1a]">
                   {point.headline}
                 </h3>

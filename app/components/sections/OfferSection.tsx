@@ -29,7 +29,7 @@ export function OfferSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
+            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
           >
             The Offer
           </motion.p>
@@ -65,9 +65,9 @@ export function OfferSection() {
         >
           <p className="text-2xl font-semibold text-[#1a1a1a] leading-snug">
             {'"If we bring you back 10 old clients and you make '}
-            <span className="bg-gradient-to-r from-[#f9a8b4] via-[#C4394A] to-[#A82D3D] bg-clip-text text-transparent">$3,000</span>
+            <span className="bg-gradient-to-r from-[#ECC878] via-[#D4941A] to-[#B07A14] bg-clip-text text-transparent">$3,000</span>
             {' — you pay us '}
-            <span className="bg-gradient-to-r from-[#f9a8b4] via-[#C4394A] to-[#A82D3D] bg-clip-text text-transparent">$300</span>
+            <span className="bg-gradient-to-r from-[#ECC878] via-[#D4941A] to-[#B07A14] bg-clip-text text-transparent">$300</span>
             {'. If we bring you nothing, you pay nothing."'}
           </p>
 
@@ -87,7 +87,7 @@ export function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            className="noise relative rounded-2xl border border-[#C4394A]/30 bg-gradient-to-br from-[#D94E5E] to-[#A82D3D] p-5 sm:p-8 md:p-12"
+            className="noise relative rounded-2xl border border-[#D4941A]/30 bg-gradient-to-br from-[#E8A820] to-[#B07A14] p-5 sm:p-8 md:p-12"
             style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15)" }}
           >
             {/* Shine overlay */}
@@ -95,7 +95,7 @@ export function OfferSection() {
 
             {/* Badge */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-              <span className="animate-badge-shimmer inline-flex rounded-full bg-gradient-to-r from-[#E07080] to-[#C4394A] px-3 py-1 text-xs font-semibold text-white">
+              <span className="animate-badge-shimmer inline-flex rounded-full bg-gradient-to-r from-[#ECC878] to-[#D4941A] px-3 py-1 text-xs font-semibold text-white">
                 Early Access Offer
               </span>
             </div>
@@ -108,7 +108,7 @@ export function OfferSection() {
             {/* Price */}
             <div className="mb-5 sm:mb-8 text-center">
               <div className="flex flex-col items-center">
-                <span className="text-7xl sm:text-8xl font-bold bg-gradient-to-r from-white to-[#ffd6da] bg-clip-text text-transparent">10%</span>
+                <span className="text-7xl sm:text-8xl font-bold bg-gradient-to-r from-white to-[#ffecc0] bg-clip-text text-transparent">10%</span>
                 <span className="text-sm text-white/80 mt-2">success fee per completed job.</span>
               </div>
               <p className="mt-3 text-sm text-white/50">Industry standard: $2,000 setup fee + $800/month retainer. We charge neither.</p>
@@ -139,7 +139,7 @@ export function OfferSection() {
               {"Early access clients lock in this model permanently. New clients after this cohort will pay a setup fee and monthly retainer. You won't."}
             </p>
 
-            <Button size="lg" className="w-full animate-nav-glow text-sm py-2 sm:text-base sm:py-3 bg-[#fce8ea] text-[#8B1A26] hover:bg-[#fad4d8]" asChild>
+            <Button size="lg" className="w-full animate-nav-glow text-sm py-2 sm:text-base sm:py-3 bg-[#fef3d6] text-[#7A5010] hover:bg-[#fde9b8]" asChild>
               <a href="#contact">{"Claim your spot"}</a>
             </Button>
 

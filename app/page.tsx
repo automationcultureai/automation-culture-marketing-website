@@ -25,14 +25,14 @@ export default function Home() {
             href: "#how-it-works",
           },
         }}
-        title={<>Your next{" "}<span className="bg-gradient-to-r from-[#f9a8b4] via-[#C4394A] to-[#A82D3D] bg-clip-text text-transparent">$10k</span>{" "}is already in your contact list</>}
-        description={<>We run tailored AI powered email and SMS campaigns to reactivate your old leads — lapsed clients, cancelled bookings, random enquiries. New bookings drop straight into your calendar. You only pay us if the client shows up. <span className="text-[#C4394A]">Zero risk to you.</span></>}
+        title={<>Your next{" "}<span className="bg-gradient-to-r from-[#ECC878] via-[#D4941A] to-[#B07A14] bg-clip-text text-transparent">$10k</span>{" "}is already in your contact list</>}
+        description={<>We run tailored AI powered email and SMS campaigns to reactivate your old leads — lapsed clients, cancelled bookings, random enquiries. New bookings drop straight into your calendar. You only pay us if the client shows up. <span className="text-[#D4941A]">Zero risk to you.</span></>}
         actions={[
           {
             text: "Wake up my leads",
             href: "#contact",
             variant: "default",
-            className: "bg-[#C4394A] hover:bg-[#AD2F3E]",
+            className: "bg-[#D4941A] hover:bg-[#B07A14]",
           },
           {
             text: "See the offer",
@@ -48,19 +48,19 @@ export default function Home() {
       />
 
       <SocialProofBar />
-      <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#C4394A_30%,#C4394A_70%,transparent_100%)]" />
+      <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#D4941A_30%,#D4941A_70%,transparent_100%)]" />
       <ProblemSection />
       <div className="h-px w-full bg-[#ECEAE6]" />
       <WhoWeServeSection />
       <div className="h-px w-full bg-[#ECEAE6]" />
       <HowItWorksSection />
-      <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#C4394A_30%,#C4394A_70%,transparent_100%)]" />
+      <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#D4941A_30%,#D4941A_70%,transparent_100%)]" />
       <OfferSection />
       <div className="h-px w-full bg-[#ECEAE6]" />
       <FounderSection />
       <div className="h-px w-full bg-[#ECEAE6]" />
       <FAQSection />
-      <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#C4394A_30%,#C4394A_70%,transparent_100%)]" />
+      <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#D4941A_30%,#D4941A_70%,transparent_100%)]" />
       <ContactSection />
       <Footer />
       <ToastNotification />

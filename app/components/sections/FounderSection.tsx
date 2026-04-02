@@ -14,7 +14,7 @@ export function FounderSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-8 sm:mb-12 text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
+          className="mb-8 sm:mb-12 text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
         >
           Who You&apos;re Working With
         </motion.p>
@@ -42,7 +42,7 @@ export function FounderSection() {
             transition={{ duration: 0.5, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             className="mt-8 flex items-center gap-4"
           >
-            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-[#C4394A]">
+            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-[#D4941A]">
               <Image
                 src="/images/nick.jpg"
                 alt="Nick, Founder of Automation Culture"
