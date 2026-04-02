@@ -82,18 +82,19 @@ export function WhoWeServeSection() {
           </motion.p>
         </div>
 
-        {/* Mobile: compact industry tag list */}
-        <div className="sm:hidden flex flex-wrap gap-2 mb-8">
+        {/* Mobile: full industry cards */}
+        <div className="sm:hidden grid gap-4 mb-8">
           {industries.map((industry) => {
             const Icon = industry.icon;
             return (
               <div
                 key={industry.title}
-                className="flex items-center gap-2 rounded-lg border border-[#ECEAE6] bg-[#F2F0EC] px-3 py-2 text-sm font-medium text-[#1a1a1a]"
+                className="noise relative overflow-hidden rounded-2xl border border-[#ECEAE6] bg-[#F2F0EC] p-6 flex flex-col gap-3"
                 style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}
               >
-                <Icon className="h-4 w-4 text-[#C4394A] shrink-0" />
-                {industry.title}
+                <Icon className="h-7 w-7 text-[#C4394A]" />
+                <h3 className="text-base font-semibold text-[#1a1a1a]">{industry.title}</h3>
+                <p className="text-sm text-[#5C5A58] leading-relaxed">{industry.description}</p>
               </div>
             );
           })}
