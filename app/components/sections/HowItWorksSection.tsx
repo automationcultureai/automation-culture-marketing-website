@@ -57,7 +57,7 @@ export function HowItWorksSection() {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#D4941A]"
           >
-            What We Do
+            How It Works
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 15 }}

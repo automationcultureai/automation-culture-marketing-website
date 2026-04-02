@@ -87,7 +87,7 @@ export function OfferSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            className="noise relative rounded-2xl border border-[#D4941A]/30 bg-gradient-to-br from-[#E8A820] to-[#B07A14] p-5 sm:p-8 md:p-12"
+            className="noise relative rounded-2xl border border-[#D4941A]/30 bg-gradient-to-br from-[#ECAF28] to-[#B88018] p-5 sm:p-8 md:p-12"
             style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.15)" }}
           >
             {/* Shine overlay */}
@@ -109,9 +109,9 @@ export function OfferSection() {
             <div className="mb-5 sm:mb-8 text-center">
               <div className="flex flex-col items-center">
                 <span className="text-7xl sm:text-8xl font-bold bg-gradient-to-r from-white to-[#ffecc0] bg-clip-text text-transparent">10%</span>
-                <span className="text-sm text-white/80 mt-2">success fee per completed job.</span>
+                <span className="text-sm text-white/90 mt-2">success fee per completed job.</span>
               </div>
-              <p className="mt-3 text-sm text-white/50">Industry standard: $2,000 setup fee + $800/month retainer. We charge neither.</p>
+              <p className="mt-3 text-sm text-white/70">Industry standard: $2,000 setup fee + $800/month retainer. We charge neither.</p>
             </div>
 
             <div className="mb-4 sm:mb-8 border-t border-white/10" />
@@ -125,7 +125,7 @@ export function OfferSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.4, delay: 0.4 + i * 0.08, ease: "easeOut" }}
-                  className="flex items-start gap-2 text-sm text-white/85"
+                  className="flex items-start gap-2 text-sm text-white/95"
                 >
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-white" />
                   {item}
@@ -135,7 +135,7 @@ export function OfferSection() {
 
             <div className="mb-4 sm:mb-8 border-t border-white/10" />
 
-            <p className="mb-4 sm:mb-6 text-center text-sm text-white/70">
+            <p className="mb-4 sm:mb-6 text-center text-sm text-white/85">
               {"Early access clients lock in this model permanently. New clients after this cohort will pay a setup fee and monthly retainer. You won't."}
             </p>
 
@@ -143,7 +143,7 @@ export function OfferSection() {
               <a href="#contact">{"Claim your spot"}</a>
             </Button>
 
-            <p className="mt-4 text-center text-xs text-white/50">
+            <p className="mt-4 text-center text-xs text-white/70">
               {"Currently onboarding early access clients in Melbourne. Spots are limited."}
             </p>
           </motion.div>
