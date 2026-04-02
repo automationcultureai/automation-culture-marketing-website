@@ -132,10 +132,10 @@ export function WhoWeServeSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="rounded-2xl px-8 py-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between" style={{ backgroundColor: "rgba(196,57,74,0.06)", border: "1px solid rgba(196,57,74,0.15)" }}>
           <div className="flex flex-col gap-2 max-w-xl">
-            <p className="text-base font-semibold text-[#1a1a1a] leading-snug">
+            <p className="text-sm font-semibold text-[#1a1a1a] leading-snug">
               You don&apos;t need a huge list.
             </p>
-            <p className="text-[#9A9790] sm:text-base leading-relaxed">
+            <p className="text-sm text-[#9A9790] leading-relaxed">
               Campaigns work with lists as small as{" "}
               <span className="text-[#C4394A] font-semibold">50 contacts</span>. The only requirement: you run a beauty or health and wellness business and have a list of past clients who haven&apos;t booked in a while.
             </p>
