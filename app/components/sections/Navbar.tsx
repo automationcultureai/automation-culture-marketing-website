@@ -30,15 +30,15 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-black/80 backdrop-blur-md border-b border-zinc-800/60"
+          ? "bg-[#FAFAF8]/90 backdrop-blur-md border-b border-[#C4394A]/20"
           : "bg-transparent"
       )}
     >
       <nav className="mx-auto flex max-w-container items-center justify-between px-4 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center gap-1 font-semibold text-lg tracking-tight">
-          <span className="text-white">Automation</span>
-          <span className="text-orange-400">Culture</span>
+          <span className="text-[#1a1a1a]">Automation</span>
+          <span className="text-[#C4394A]">Culture</span>
         </a>
 
         {/* Desktop nav */}
@@ -48,7 +48,7 @@ export function Navbar() {
               <a
                 href={link.href}
                 {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="text-sm text-zinc-400 hover:text-white transition-colors duration-200"
+                className="text-sm text-[#5C5A58] hover:text-[#1a1a1a] transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -58,14 +58,14 @@ export function Navbar() {
 
         {/* CTA */}
         <div className="hidden md:block">
-          <Button variant="default" size="sm" className="animate-nav-glow" asChild>
+          <Button variant="default" size="sm" className="animate-nav-glow bg-[#C4394A] hover:bg-[#AD2F3E]" asChild>
             <a href="#contact">Wake up my leads</a>
           </Button>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-zinc-400 hover:text-white"
+          className="md:hidden text-[#5C5A58] hover:text-[#1a1a1a]"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -75,14 +75,14 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-md border-b border-zinc-800">
+        <div className="md:hidden bg-[#FAFAF8]/95 backdrop-blur-md border-b border-[#ECEAE6]">
           <ul className="flex flex-col px-4 py-4 gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                  className="text-zinc-300 hover:text-white transition-colors"
+                  className="text-[#5C5A58] hover:text-[#1a1a1a] transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -90,7 +90,7 @@ export function Navbar() {
               </li>
             ))}
             <li>
-              <Button variant="default" size="sm" className="w-full" asChild>
+              <Button variant="default" size="sm" className="w-full bg-[#C4394A] hover:bg-[#AD2F3E]" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
                   Wake up my leads
                 </a>

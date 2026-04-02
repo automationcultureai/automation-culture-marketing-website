@@ -2,17 +2,16 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-zinc-800 bg-black px-4 py-5 pb-20 sm:py-10 md:pb-10">
-      <div className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(234,88,12,0.03) 0%, transparent 40%)" }} />
+    <footer className="relative border-t border-[#ECEAE6] bg-[#FAFAF8] px-4 py-5 pb-20 sm:py-10 md:pb-10">
       <div className="relative mx-auto max-w-container">
 
         {/* Mobile: simple centred logo + tagline */}
         <div className="sm:hidden flex flex-col items-center gap-2 text-center">
           <a href="#" className="flex items-center gap-1 font-semibold text-base">
-            <span className="text-white">Automation</span>
-            <span className="text-orange-400">Culture</span>
+            <span className="text-[#1a1a1a]">Automation</span>
+            <span className="text-[#C4394A]">Culture</span>
           </a>
-          <p className="text-sm text-zinc-600">We automate the gruntwork. You take care of business.</p>
+          <p className="text-sm text-[#9A9790]">We automate the gruntwork. You take care of business.</p>
         </div>
 
         {/* Desktop: full footer with nav */}
@@ -20,13 +19,13 @@ export function Footer() {
 
           {/* Logo */}
           <a href="#" className="flex items-center gap-1 font-semibold text-base">
-            <span className="text-white">Automation</span>
-            <span className="text-orange-400">Culture</span>
+            <span className="text-[#1a1a1a]">Automation</span>
+            <span className="text-[#C4394A]">Culture</span>
           </a>
 
           {/* Tagline */}
           <p className="text-sm text-zinc-600">
-            We automate the gruntwork. You take care of business.
+            We automate the boring stuff. You do what you do best.
           </p>
 
           {/* Nav links */}
@@ -42,7 +41,7 @@ export function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-zinc-600 hover:text-zinc-400 transition-colors"
+                className="text-sm text-[#9A9790] hover:text-[#5C5A58] transition-colors"
               >
                 {link.label}
               </a>
@@ -50,8 +49,8 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-3 pt-3 sm:mt-8 sm:border-t sm:border-zinc-900 sm:pt-6 text-center">
-          <p className="text-xs text-zinc-700">
+        <div className="mt-3 pt-3 sm:mt-8 sm:border-t sm:border-[#ECEAE6] sm:pt-6 text-center">
+          <p className="text-xs text-[#9A9790]">
             © {year} Automation Culture. All rights reserved.
           </p>
         </div>

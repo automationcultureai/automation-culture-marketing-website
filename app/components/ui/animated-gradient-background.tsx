@@ -17,10 +17,10 @@ export function AnimatedGradientBackground({
       <motion.div
         className="absolute inset-0"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: 0.30 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         style={{
-          background: `radial-gradient(ellipse 100% 80% at ${position}, #fde68a 0%, #fb923c 18%, #c2410c 35%, transparent 70%)`,
+          background: `radial-gradient(ellipse 140% 85% at ${position}, #fff0f2 0%, #f9a8b4 15%, #C4394A 38%, transparent 68%)`,
         }}
       />
     </div>

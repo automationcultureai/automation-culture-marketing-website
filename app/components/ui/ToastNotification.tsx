@@ -45,11 +45,11 @@ export function ToastNotification() {
       aria-live="polite"
       className={`toast-notification ${phase === 'exiting' ? 'toast-exiting' : 'toast-entering'}`}
       style={{
-        background: '#1A1410',
-        border: '1px solid rgba(249,115,22,0.25)',
+        background: '#F2F0EC',
+        border: '1px solid #ECEAE6',
         borderRadius: 14,
         padding: '18px 20px',
-        boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>
@@ -59,18 +59,18 @@ export function ToastNotification() {
             width: 10,
             height: 10,
             borderRadius: '50%',
-            background: '#F97316',
+            background: '#C4394A',
             flexShrink: 0,
           }}
         />
-        <span style={{ color: '#ffffff', fontSize: 15, fontWeight: 500, lineHeight: 1.4 }}>
+        <span style={{ color: '#1a1a1a', fontSize: 15, fontWeight: 500, lineHeight: 1.4 }}>
           Sophie Arnold
         </span>
       </div>
-      <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: 13, margin: 0, marginBottom: 4, lineHeight: 1.4 }}>
+      <p style={{ color: '#5C5A58', fontSize: 13, margin: 0, marginBottom: 4, lineHeight: 1.4 }}>
         Just booked a job via Automation Culture
       </p>
-      <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: 12, margin: 0, lineHeight: 1.4 }}>
+      <p style={{ color: '#9A9790', fontSize: 12, margin: 0, lineHeight: 1.4 }}>
         Melbourne, 2 hours ago
       </p>
     </div>

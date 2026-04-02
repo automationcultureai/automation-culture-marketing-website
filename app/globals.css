@@ -4,48 +4,26 @@
 
 @layer base {
   :root {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 25 95% 53%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 25 95% 53%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 25 95% 53%;
-    --radius: 0.5rem;
-  }
-
-  .light {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 25 95% 48%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --background: 60 9% 98%;        /* #FAFAF8 */
+    --foreground: 0 0% 10%;         /* #1a1a1a */
+    --card: 40 14% 95%;             /* #F2F0EC */
+    --card-foreground: 0 0% 10%;    /* #1a1a1a */
+    --popover: 40 14% 95%;          /* #F2F0EC */
+    --popover-foreground: 0 0% 10%; /* #1a1a1a */
+    --primary: 353 55% 50%;          /* #C4394A */
+    --primary-foreground: 60 9% 98%; /* #FAFAF8 */
+    --secondary: 40 14% 95%;        /* #F2F0EC */
+    --secondary-foreground: 0 0% 10%; /* #1a1a1a */
+    --muted: 40 14% 95%;            /* #F2F0EC */
+    --muted-foreground: 30 2% 53%;  /* #5C5A58 */
+    --accent: 353 55% 50%;           /* #C4394A */
+    --accent-foreground: 0 0% 98%;  /* #FAFAF8 */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 25 95% 48%;
+    --border: 40 14% 92%;           /* #ECEAE6 */
+    --input: 40 14% 92%;            /* #ECEAE6 */
+    --ring: 353 55% 50%;             /* #C4394A */
+    --radius: 0.5rem;
   }
 }
 
@@ -133,11 +111,11 @@ html {
 
 /* Glow effects */
 .glow-blue {
-  box-shadow: 0 0 40px rgba(249, 115, 22, 0.15), 0 0 80px rgba(249, 115, 22, 0.08);
+  box-shadow: 0 0 40px rgba(26, 26, 26, 0.06), 0 0 80px rgba(26, 26, 26, 0.03);
 }
 
 .glow-blue-hover:hover {
-  box-shadow: 0 0 40px rgba(249, 115, 22, 0.25), 0 0 80px rgba(249, 115, 22, 0.12);
+  box-shadow: 0 0 40px rgba(26, 26, 26, 0.10), 0 0 80px rgba(26, 26, 26, 0.05);
 }
 
 /* Card hover transitions */
@@ -147,8 +125,8 @@ html {
 
 .card-hover:hover {
   transform: translateY(-2px);
-  border-color: rgba(249, 115, 22, 0.4);
-  box-shadow: 0 0 30px rgba(249, 115, 22, 0.12);
+  border-color: #ECEAE6;
+  box-shadow: 0 0 30px rgba(26, 26, 26, 0.08);
 }
 
 /* ===== HERO ENTRANCE ANIMATIONS (page load, no scroll trigger) ===== */
@@ -183,22 +161,75 @@ html {
 
 /* ===== IDLE GLOW PULSE (nav CTA + offer + contact buttons) ===== */
 @keyframes nav-glow {
-  0%, 100% { box-shadow: 0 0 0px rgba(249, 115, 22, 0); }
-  50%       { box-shadow: 0 0 12px rgba(249, 115, 22, 0.4); }
+  0%, 100% { box-shadow: 0 0 0px rgba(196, 57, 74, 0); }
+  50%       { box-shadow: 0 0 16px rgba(196, 57, 74, 0.45); }
 }
 
 .animate-nav-glow {
   animation: nav-glow 2.5s ease-in-out infinite;
 }
 
+/* ===== BADGE SHIMMER ===== */
+@keyframes badge-shimmer {
+  0%   { transform: translateX(-100%) skewX(-20deg); }
+  100% { transform: translateX(350%) skewX(-20deg); }
+}
+
+.animate-badge-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-badge-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.55) 50%, transparent 100%);
+  transform: translateX(-100%) skewX(-20deg);
+  animation: badge-shimmer 3.5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-badge-shimmer-dark {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-badge-shimmer-dark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.12) 40%, rgba(255,255,255,0.42) 50%, rgba(255,255,255,0.12) 60%, transparent 100%);
+  transform: translateX(-100%) skewX(-20deg);
+  animation: badge-shimmer 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* ===== NOISE TEXTURE ===== */
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+}
+
+/* ===== FORM FIELD ===== */
+.form-field {
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+}
+
 /* ===== ADDITIONAL DELAY UTILITIES ===== */
 .delay-200 { animation-delay: 200ms; }
 .delay-400 { animation-delay: 400ms; }
 
-/* ===== MOBILE: force black background on all sections ===== */
+/* ===== MOBILE: force background on all sections ===== */
 @media (max-width: 639px) {
   section {
-    background: #000 !important;
+    background: #FAFAF8 !important;
   }
   /* Hide inline-style radial gradient overlay divs inside sections (except the hero mobile glow) */
   section .absolute[style*="radial-gradient"]:not(.mobile-hero-glow),

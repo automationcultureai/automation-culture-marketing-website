@@ -20,18 +20,18 @@ export function Button({
   return (
     <Comp
       className={cn(
-        "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 disabled:pointer-events-none disabled:opacity-50",
+        "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C4394A] disabled:pointer-events-none disabled:opacity-50",
         {
           // Variants
-          "bg-orange-500 text-white hover:bg-orange-400":
+          "bg-[#C4394A] text-white hover:bg-[#AD2F3E]":
   variant === "default",
-          "bg-white text-black hover:bg-zinc-100":
+          "bg-[#FAFAF8] text-[#1a1a1a] hover:bg-[#F2F0EC]":
   variant === "white",
-          "bg-transparent text-white border border-zinc-700 hover:border-zinc-500 hover:bg-zinc-900":
+          "bg-transparent text-[#1a1a1a] border border-[#ECEAE6] hover:border-[#1a1a1a] hover:bg-[#F2F0EC]":
             variant === "ghost",
-          "bg-transparent text-white border border-zinc-700 hover:border-orange-500/50 hover:bg-orange-500/5":
+          "bg-transparent text-[#1a1a1a] border border-[#1a1a1a]/30 hover:border-[#1a1a1a]/60 hover:bg-[#1a1a1a]/5":
             variant === "outline",
-          "bg-transparent text-white hover:bg-white/5":
+          "bg-transparent text-[#1a1a1a]":
   variant === "glow",
           "bg-red-600 text-white hover:bg-red-700": variant === "destructive",
           // Sizes

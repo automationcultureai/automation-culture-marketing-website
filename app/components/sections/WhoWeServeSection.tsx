@@ -1,50 +1,50 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { HardHat, Sparkles, Scissors, Stethoscope, Droplets, Briefcase } from "lucide-react";
+import { Scissors, Stethoscope } from "lucide-react";
 
 const industries = [
   {
-    icon: HardHat,
-    title: "Tradies",
-    description:
-      "Plumbers, electricians, builders, landscapers — sitting on old job quotes that never converted. That list is worth more than you think.",
-  },
-  {
-    icon: Sparkles,
-    title: "Cleaning Services",
-    description:
-      "Residential and commercial cleaners with lapsed clients or unanswered enquiries. One reactivation campaign can fill your calendar for months.",
-  },
-  {
     icon: Scissors,
-    title: "Beauty & Wellness",
+    title: "Beauty",
     description:
-      "Salons, spas, therapists, personal trainers. Past clients who loved your work but just fell off. They're easier to win back than you think.",
+      "Salons, spas, clinics, lash artists, massage therapists, beauty educators. Your rebooking rate is everything — and past clients who loved your work are the easiest revenue you'll ever win back.",
   },
   {
     icon: Stethoscope,
-    title: "Health Practitioners",
+    title: "Health & Wellness",
     description:
-      "Physios, chiros, dentists, and allied health professionals with patients overdue for a follow-up. A gentle nudge is all it takes.",
-  },
-  {
-    icon: Droplets,
-    title: "Home Services",
-    description:
-      "Pest control, pool care, HVAC, removalists. High-repeat services with a cold list — these are your best-fit leads because they've already bought once.",
-  },
-  {
-    icon: Briefcase,
-    title: "Any Service Business",
-    description:
-      "If you have a list of contacts who've shown interest but never converted — past customers, old enquiries, unconverted quotes — we can work with that.",
+      "Pilates, yoga studios, physios, chiros, psychologists, naturopaths, personal trainers, allied health practitioners. Lapsed patients and clients don't disappear — they just need the right nudge at the right time.",
   },
 ];
 
 export function WhoWeServeSection() {
   return (
-    <section id="who" className="relative bg-zinc-950 px-4 py-12 sm:py-24 md:py-32">
+    <section id="who" className="relative bg-[#FAFAF8] px-4 py-12 sm:py-24 md:py-32 overflow-hidden">
+
+      {/* Figure — right side, behind content */}
+      <motion.div
+        className="hidden sm:block pointer-events-none absolute right-[150px] top-[110px] z-0"
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.div
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 4, ease: "easeInOut", repeat: Infinity, repeatType: "loop" }}
+        >
+          <Image
+            src="/images/figure upscale.png"
+            alt=""
+            width={320}
+            height={480}
+            className="w-[240px] h-auto"
+            aria-hidden
+          />
+        </motion.div>
+      </motion.div>
 
       <div className="relative mx-auto max-w-container">
 
@@ -55,7 +55,7 @@ export function WhoWeServeSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-orange-400"
+            className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-[#C4394A]"
           >
             Who This Is For
           </motion.p>
@@ -64,11 +64,11 @@ export function WhoWeServeSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl"
+            className="text-4xl font-semibold leading-tight text-[#1a1a1a] sm:text-5xl md:text-6xl" style={{ letterSpacing: "-0.02em" }}
           >
-            You&apos;re a service business{" "}
-            <span className="text-zinc-500">
-              and have a contact list you haven&apos;t touched in ages.
+            Built specifically for{" "}<span className="bg-gradient-to-r from-[#f9a8b4] via-[#C4394A] to-[#A82D3D] bg-clip-text text-transparent">beauty and wellness</span>{" "}businesses{" "}
+            <span className="text-[#5C5A58]">
+              with a lapsed client list.
             </span>
           </motion.h2>
           <motion.p
@@ -76,7 +76,7 @@ export function WhoWeServeSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="mt-4 text-zinc-400 sm:text-lg"
+            className="mt-4 text-[#5C5A58] sm:text-lg"
           >
             We built this specifically for businesses that do great work but don&apos;t have time to chase old leads. If any of this sounds familiar, you&apos;re the right fit.
           </motion.p>
@@ -89,9 +89,10 @@ export function WhoWeServeSection() {
             return (
               <div
                 key={industry.title}
-                className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-sm font-medium text-white"
+                className="flex items-center gap-2 rounded-lg border border-[#ECEAE6] bg-[#F2F0EC] px-3 py-2 text-sm font-medium text-[#1a1a1a]"
+                style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}
               >
-                <Icon className="h-4 w-4 text-orange-400/70 shrink-0" />
+                <Icon className="h-4 w-4 text-[#C4394A] shrink-0" />
                 {industry.title}
               </div>
             );
@@ -99,7 +100,7 @@ export function WhoWeServeSection() {
         </div>
 
         {/* Desktop: full industry cards grid */}
-        <div className="hidden sm:grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-12">
+        <div className="hidden sm:grid gap-4 sm:grid-cols-2 mb-12">
           {industries.map((industry, i) => {
             const Icon = industry.icon;
             const delay = (i % 3) * 0.1 + Math.floor(i / 3) * 0.2;
@@ -110,36 +111,41 @@ export function WhoWeServeSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay, ease: "easeOut" }}
-                whileHover={{ y: -4, transition: { type: "spring", stiffness: 600, damping: 35 } }}
-                className="group relative overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 flex flex-col gap-3 hover:border-orange-500/30 transition-colors duration-200"
+                whileHover={{ scale: 1.02, boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.10)", transition: { type: "spring", stiffness: 300, damping: 30 } }}
+                className="noise relative overflow-hidden rounded-2xl border border-[#ECEAE6] bg-[#F2F0EC] p-6 flex flex-col gap-3"
+                style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 1px 3px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)" }}
               >
-                <Icon className="h-7 w-7 text-orange-400/70" />
-                <h3 className="text-base font-semibold text-white">{industry.title}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed">{industry.description}</p>
-                <div className="pointer-events-none absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(ellipse_at_bottom,rgba(255,255,255,0.08)_0%,transparent_70%)]" />
+                <Icon className="h-7 w-7 text-[#C4394A]" />
+                <h3 className="text-base font-semibold text-[#1a1a1a]">{industry.title}</h3>
+                <p className="text-sm text-[#5C5A58] leading-relaxed">{industry.description}</p>
               </motion.div>
             );
           })}
         </div>
 
         {/* Qualifier */}
-        <div className="rounded-2xl border border-orange-500/30 bg-orange-500/10 px-8 py-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between shadow-[0_0_40px_-8px_rgba(249,115,22,0.25)]">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="rounded-2xl px-8 py-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between" style={{ backgroundColor: "rgba(196,57,74,0.06)", border: "1px solid rgba(196,57,74,0.15)" }}>
           <div className="flex flex-col gap-2 max-w-xl">
-            <p className="text-base font-semibold text-white leading-snug">
+            <p className="text-base font-semibold text-[#1a1a1a] leading-snug">
               You don&apos;t need a huge list.
             </p>
-            <p className="text-zinc-300 sm:text-base leading-relaxed">
+            <p className="text-[#9A9790] sm:text-base leading-relaxed">
               Campaigns work with lists as small as{" "}
-              <span className="text-orange-400 font-semibold">50 contacts</span>. The only requirement: you run a service business and have real leads — past customers, old enquiries, or unconverted quotes.
+              <span className="text-[#C4394A] font-semibold">50 contacts</span>. The only requirement: you run a beauty or health and wellness business and have a list of past clients who haven&apos;t booked in a while.
             </p>
           </div>
           <a
             href="#contact"
-            className="shrink-0 inline-flex items-center gap-2 rounded-lg bg-orange-500 hover:bg-orange-400 px-5 py-3 text-sm font-semibold text-white transition-colors"
+            className="shrink-0 inline-flex items-center gap-2 rounded-lg bg-[#C4394A] hover:bg-[#AD2F3E] px-5 py-3 text-sm font-semibold text-white transition-colors"
           >
             See if this fits your business →
           </a>
-        </div>
+        </motion.div>
 
       </div>
     </section>

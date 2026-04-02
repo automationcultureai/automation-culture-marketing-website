@@ -35,7 +35,8 @@ const allStats = [...stats, ...stats];
 export function SocialProofBar() {
   return (
     <section
-      className="hidden sm:block relative bg-zinc-900/50 border-t border-b border-zinc-700 py-8 overflow-hidden"
+      className="hidden sm:block relative bg-[#F2F0EC] py-8 overflow-hidden border-y border-[#ECEAE6]"
+      style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.9), 0 4px 24px rgba(0,0,0,0.07), 0 -2px 8px rgba(0,0,0,0.04)" }}
       data-count-trigger
     >
       <div className="flex w-max animate-ticker">
@@ -48,10 +49,10 @@ export function SocialProofBar() {
           return (
             <div
               key={i}
-              className="flex-none min-w-[280px] text-center px-10 border-r border-zinc-800 last:border-r-0"
+              className="flex-none min-w-[280px] text-center px-10 border-r border-[#1a1a1a]/10 last:border-r-0"
             >
               <div className="font-bold text-[32px] leading-none mb-2">
-                <span className="text-orange-400">
+                <span className="text-[#C4394A]">
                   {/* Dollar sign (or any prefix) — always visible */}
                   {stat.prefix}
 
@@ -75,9 +76,9 @@ export function SocialProofBar() {
                   {/* Percent symbol (or any suffix symbol) — always visible */}
                   {stat.symbol}
                 </span>
-                <span className="text-white text-2xl">{stat.whiteText}</span>
+                <span className="text-[#1a1a1a] text-2xl">{stat.whiteText}</span>
               </div>
-              <div className="text-sm text-zinc-500 leading-snug">{stat.sub}</div>
+              <div className="text-sm text-[#5C5A58] leading-snug">{stat.sub}</div>
             </div>
           );
         })}
