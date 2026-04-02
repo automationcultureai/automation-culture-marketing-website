@@ -11,7 +11,7 @@ export function Footer() {
             <span className="text-[#1a1a1a]">Automation</span>
             <span className="text-[#C4394A]">Culture</span>
           </a>
-          <p className="text-sm text-[#9A9790]">We automate the gruntwork. You take care of business.</p>
+          <p className="text-sm text-[#9A9790]">We automate the boring stuff. You do what you do best.</p>
         </div>
 
         {/* Desktop: full footer with nav */}
