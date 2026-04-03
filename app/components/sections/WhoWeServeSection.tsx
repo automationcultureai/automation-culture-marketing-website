@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Scissors, Stethoscope } from "lucide-react";
+import Image from "next/image";
 
 const industries = [
   {
@@ -22,6 +23,21 @@ export function WhoWeServeSection() {
   return (
     <section id="who" className="relative bg-[#FAFAF8] px-4 py-12 sm:py-24 md:py-32 overflow-hidden">
 
+      {/* Background image — right side, desktop only */}
+      <motion.div
+        className="hidden sm:block absolute right-0 top-0 h-full w-1/2 pointer-events-none"
+        style={{ maskImage: "linear-gradient(to right, transparent 0%, black 35%)", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 35%)" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
+        <Image
+          src="/images/golden girl 2.png"
+          alt=""
+          fill
+          className="object-cover object-top opacity-50"
+        />
+      </motion.div>
 
       <div className="relative mx-auto max-w-container">
 
