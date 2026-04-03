@@ -99,6 +99,31 @@ export function HeroSection({
             ))}
           </div>
 
+          {/* Industry pills */}
+          <div className="relative z-10 animate-appear opacity-0 delay-500 flex flex-wrap justify-center items-center gap-2">
+            <span className="text-xs font-medium text-[#D4941A] mr-1">We work with</span>
+            {["Yoga studios", "Day spas", "Skin clinics", "Pilates studios", "Physiotherapists", "Naturopaths", "Nutritionists", "Beauty salons"].map((label) => (
+              <motion.span
+                key={label}
+                whileHover={{ y: -3, boxShadow: "0 4px 10px rgba(0,0,0,0.12)" }}
+                transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                className="rounded-full border border-[#ECEAE6] bg-[#F2F0EC] px-3 py-1 text-xs font-medium text-[#5C5A58] cursor-default transition-colors duration-200 hover:border-[#D4941A]/40 hover:text-[#1a1a1a]"
+                style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.06)" }}
+              >
+                {label}
+              </motion.span>
+            ))}
+            <motion.a
+              href="#who"
+              whileHover={{ y: -3, boxShadow: "0 4px 10px rgba(0,0,0,0.12)" }}
+              transition={{ type: "spring", stiffness: 400, damping: 20 }}
+              className="rounded-full border border-[#D4941A]/40 bg-[#D4941A]/8 px-3 py-1 text-xs font-medium text-[#D4941A] transition-colors duration-200 hover:bg-[#D4941A]/15 hover:border-[#D4941A]/60"
+              style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.06)" }}
+            >
+              Is this for you? →
+            </motion.a>
+          </div>
+
         </div>
       </div>
 

@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/sections/Navbar";
-import { ToastNotification } from "@/components/ui/ToastNotification";
 import { MobileStickyBar } from "@/components/ui/MobileStickyBar";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { SocialProofBar } from "@/components/sections/SocialProofBar";
@@ -63,7 +62,6 @@ export default function Home() {
       <div className="h-px w-full bg-[linear-gradient(90deg,transparent_0%,#D4941A_30%,#D4941A_70%,transparent_100%)]" />
       <ContactSection />
       <Footer />
-      <ToastNotification />
       <MobileStickyBar />
     </main>
   );
