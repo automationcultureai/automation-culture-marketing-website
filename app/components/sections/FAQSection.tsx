@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    q: "Is this actually free to start?",
-    a: "Yes. Zero setup fee, zero retainer. You don't pay us anything until a booking from our campaign is completed and you've been paid. We only invoice monthly for completed jobs.",
+    q: "How much does it cost to start?",
+    a: "Setup up fee is usually $99 but for early access clients this fee is completely waived - zero setup fee, zero retainer. You don't pay us anything until a booking from our campaign is completed.",
   },
   {
     q: "Will this annoy my past clients?",

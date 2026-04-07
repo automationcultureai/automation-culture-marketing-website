@@ -40,8 +40,8 @@ export function OfferSection() {
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             className="text-4xl font-semibold leading-tight text-[#1a1a1a] sm:text-5xl md:text-6xl"
           >
-            Zero risk.{" "}
-            <span className="text-[#5C5A58]">You only pay when it works.</span>
+            Setup fee completely waived.{" "}
+            <span className="text-[#5C5A58]"> You only pay when it works. Zero risk.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 15 }}
@@ -109,7 +109,7 @@ export function OfferSection() {
             <div className="mb-5 sm:mb-8 text-center">
               <div className="flex flex-col items-center">
                 <span className="text-7xl sm:text-8xl font-bold bg-gradient-to-r from-white to-[#ffecc0] bg-clip-text text-transparent">10%</span>
-                <span className="text-sm text-white/90 mt-2">success fee per completed job.</span>
+                <span className="text-sm text-white/90 mt-2">success fee per completed appointment. No setup fee.</span>
               </div>
               <p className="mt-3 text-sm text-white/70">Industry standard: $2,000 setup fee + $800/month retainer. We charge neither.</p>
             </div>

@@ -11,11 +11,11 @@ const stats = [
   },
   {
     // "$0 Upfront" — "$" static, "0" fades in (counting to zero is meaningless)
-    numeral: 0,
+    numeral: 99,
     prefix: "$",
     symbol: "",
-    whiteText: " Upfront",
-    sub: "You only pay once we make you money",
+    whiteText: " to start",
+    sub: "*Limited Time Only* Setup fee waived for early access clients (see offer)",
     fadeIn: true,
   },
   {
@@ -23,8 +23,8 @@ const stats = [
     numeral: 10,
     prefix: "",
     symbol: "%",
-    whiteText: " Success Fee Only",
-    sub: "Flat fee for early access clients - no set up fee or retainer",
+    whiteText: " Success Fee",
+    sub: "Only pay for completed appointments - not cancellations",
     countTo: 10,
     countFrom: 100,
   },

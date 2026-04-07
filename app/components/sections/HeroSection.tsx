@@ -57,6 +57,7 @@ export function HeroSection({
     >
 
 
+
       {/* Mobile: subtle glow rising from bottom */}
       <div className="sm:hidden pointer-events-none absolute inset-0">
         <div style={{ background: "radial-gradient(ellipse 140% 50% at 50% 100%, rgba(212,148,26,0.18) 0%, rgba(212,148,26,0.07) 55%, transparent 80%)" }} className="absolute inset-0" />

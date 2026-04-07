@@ -198,7 +198,7 @@ export function HowItWorksSection() {
                   {"So what's the catch?"}
                 </p>
                 <p className="text-[#1a1a1a] font-semibold text-lg leading-snug">
-                  {"Genuinely — there isn't one. We make money by making you money, simple as that."}
+                  {"There isn't one. We make money by making you money, simple as that."}
                 </p>
               </div>
               <a href="#offer" className="inline-flex items-center gap-1 text-sm font-medium transition-colors" style={{ color: service.accent }}>

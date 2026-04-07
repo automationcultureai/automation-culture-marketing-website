@@ -25,7 +25,7 @@ export default function Home() {
           },
         }}
         title={<>Your next{" "}<span className="bg-gradient-to-r from-[#ECC878] via-[#D4941A] to-[#B07A14] bg-clip-text text-transparent">$10k</span>{" "}is already in your contact list</>}
-        description={<>We run tailored AI powered email and SMS campaigns to reactivate your old leads — lapsed clients, cancelled bookings, random enquiries. New bookings drop straight into your calendar. You only pay us once the appointment copmletes. <span className="text-[#D4941A]">Zero risk to you.</span></>}
+        description={<>We run AI powered email and SMS campaigns to reactivate your old leads — lapsed clients, cancelled bookings, random enquiries. We handle everything. You just take the bookings. <span className="text-[#D4941A]">Only $99 to start.</span></>}
         actions={[
           {
             text: "Wake up my leads",
