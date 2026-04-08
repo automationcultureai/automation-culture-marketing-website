@@ -41,7 +41,9 @@ export function OfferSection() {
             className="text-4xl font-semibold leading-tight text-[#1a1a1a] sm:text-5xl md:text-6xl"
           >
             Setup fee completely waived.{" "}
-            <span className="text-[#5C5A58]"> You only pay when it works. Zero risk.</span>
+            <span className="bg-gradient-to-r from-[#ECC878] via-[#D4941A] to-[#B07A14] bg-clip-text text-transparent">Zero risk.</span>
+            {" "}
+            <span className="text-[#5C5A58]">You only pay when it works.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 15 }}
