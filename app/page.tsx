@@ -28,7 +28,7 @@ export default function Home() {
         description={<>We run AI powered email and SMS campaigns to reactivate your old leads — lapsed clients, cancelled bookings, random enquiries. We handle everything. You just take the bookings. <span className="text-[#D4941A]">Only $99 to start.</span></>}
         actions={[
           {
-            text: "Wake up my leads",
+            text: "Get Started",
             href: "#contact",
             variant: "default",
             className: "bg-[#D4941A] hover:bg-[#B07A14]",

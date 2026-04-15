@@ -59,7 +59,7 @@ export function Navbar() {
         {/* CTA */}
         <div className="hidden md:block">
           <Button variant="default" size="sm" className="bg-[#D4941A] hover:bg-[#B07A14]" asChild>
-            <a href="#contact">Wake up my leads</a>
+            <a href="#contact">Get Started</a>
           </Button>
         </div>
 
@@ -92,7 +92,7 @@ export function Navbar() {
             <li>
               <Button variant="default" size="sm" className="w-full bg-[#D4941A] hover:bg-[#B07A14]" asChild>
                 <a href="#contact" onClick={() => setMobileOpen(false)}>
-                  Wake up my leads
+                  Get Started
                 </a>
               </Button>
             </li>

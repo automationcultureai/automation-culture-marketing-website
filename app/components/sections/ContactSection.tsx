@@ -266,7 +266,7 @@ export function ContactSection() {
                   ) : (
                     <>
                       <Send className="mr-2 h-4 w-4" />
-                      {"Wake up my leads"}
+                      {"Get Started"}
                     </>
                   )}
                 </Button>
